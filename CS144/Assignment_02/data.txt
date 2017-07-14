@@ -1,0 +1,10 @@
+Mock, Frank                     37596.08
+Mock, Debbie                    32107.14
+Smith, Alex                     20069.18
+Jones, Sally                    24033.29
+Rogers, Fred                    25596.32
+Flintstone, Fred                34100.75
+Hunter, Debbie                  33712.50
+Smith, Tim                      22126.27
+Johnson, Mel                    24033.29
+Rubble, Barney                  26876.14
