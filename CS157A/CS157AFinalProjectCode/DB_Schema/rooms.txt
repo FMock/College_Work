@@ -1,0 +1,60 @@
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	Double bed, TV, No view	150.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, No view	160.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Basic	King bed, TV, Pool view	190.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, No view	250.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Pool view	350.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50
+	Suite	Fully furnished, King bed, TV, Mini-Bar, Spa Tub, Ocean view	450.50

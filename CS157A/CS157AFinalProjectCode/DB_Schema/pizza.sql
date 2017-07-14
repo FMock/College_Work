@@ -1,0 +1,37 @@
+DROP DATABASE IF EXISTS Pizza;
+CREATE DATABASE Pizza;
+USE Pizza; 
+DROP TABLE IF EXISTS Person;
+CREATE TABLE Person
+(
+ name VARCHAR(60),
+ age Int,
+ gender VARCHAR(12)
+);
+
+DROP TABLE IF EXISTS Eats;
+CREATE TABLE Eats
+(
+ name VARCHAR(60),
+ pizza VARCHAR(60)
+);
+
+DROP TABLE IF EXISTS Frequents;
+CREATE TABLE Frequents
+(
+ name VARCHAR(60),
+ pizzeria VARCHAR(60)
+);
+
+DROP TABLE IF EXISTS Serves;
+CREATE TABLE Serves
+(
+ pizzeria VARCHAR(60),
+ pizza VARCHAR(60),
+ price DOUBLE
+);
+
+#LOAD DATA LOCAL INFILE 'person.txt' INTO TABLE Person;
+#LOAD DATA LOCAL INFILE 'eats.txt' INTO TABLE Eats;
+#LOAD DATA LOCAL INFILE 'frequents.txt' INTO TABLE Frequents;
+#LOAD DATA LOCAL INFILE 'serves.txt' INTO TABLE Serves;

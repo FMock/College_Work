@@ -1,0 +1,19 @@
+	Champagne, VIP	00.00
+	Wine, VIP	00.00
+	Champagne, US dry	25.00
+	Champagne, Import dry	45.00
+	Wine, Merlot 2013	69.99
+	Wine, Pinot 2013	59.99
+	Wine, Cabernet Sauvignon 2013	80.00
+	Wine, Chardonay 2013	50.00
+	Water, mineral 12oz	12.00
+	Soda, 12oz	4.00
+	Massage, full-body	101.00
+	Massage, foot	45.00
+	Room Service Breakfast	22.00
+	Room Service Lunch	24.00
+	Room Service Dinner	32.00
+	Restuarant meal adult	20.00
+	Restuarant meal child	15.00
+	Movie, adult	18.00
+	Movie, family	10.00
