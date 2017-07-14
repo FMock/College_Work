@@ -1,0 +1,133 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\title{CS147 Homework 1}
+\author{Frank Mock}
+\begin{document}
+\maketitle
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+\section*{1.5}
+\subsection*{a.}
+P2 has the highest performance in terms of instructions per second because...\\\\
+P1's performance $\frac{3 \times 10^{9} cycles}{second} \times \frac{instructions}{1.5 cycles} = \frac{3 \times 10^{9} instructions}{1.5 second} = 2 \times 10^{9} \frac{instructions}{second}$\\\\
+P2's performance $\frac{2.5 \times 10^{9} cycles}{second} \times \frac{instructions}{1.0 cycles} = \frac{2.5 \times 10^{9} instructions}{1.0 second} = 2.5 \times 10^{9} \frac{instructions}{second}$\\\\
+P3's performance $\frac{4 \times 10^{9} cycles}{second} \times \frac{instructions}{2.2 cycles} = \frac{4 \times 10^{9} instructions}{2.2 second} = 1.8 \times 10^{9} \frac{instructions}{second}$\\\\
+As you can see, P2 can do the most instructions per second.
+\subsection*{b.}
+P1 number of instructions = $\frac{10 second}{1} \times \frac{2 \times 10^{9} instructions}{second}$ = $20 \times 10^{9} instructions$\\\\
+P1 number of cycles = $\frac{10 second}{1} \times \frac{3 \times 10^{9} cycles}{second}= 30 \times 10^{9} cycles$\\\\
+P2 number of instructions = $\frac{10 second}{1} \times \frac{2.5 \times 10^{9} instructions}{second}$ = $25 \times 10^{9} instructions$\\\\
+P2 number of cycles = $\frac{10 second}{1} \times \frac{2.5 \times 10^{9} cycles}{second}= 25 \times 10^{9} cycles$\\\\
+P3 number of instructions = $\frac{10 second}{1} \times \frac{1.8 \times 10^{9} instructions}{second}$ = $18 \times 10^{9} instructions$\\\\
+P3 number of cycles = $\frac{10 second}{1} \times \frac{4 \times 10^{9} cycles}{second}= 40 \times 10^{9} cycles$
+\subsection*{c.}
+Each processor clock rate needs to be increased by a factor of 1.7. I used the equation given in the text for execution time to calculate this.\\\\
+$Time = \frac{Seconds}{Program} = \frac{Instructions}{Program} \times \frac{Clock cycles}{Instruction} \times \frac{Seconds}{Clock cycle}$\\\\
+If P1's execution time is $10 \frac{seconds}{program} = \frac{1 sec}{3\times10^9 cycles} \times \frac{1.5 cycles}{instruction} \times \frac{20 \times 10^9 instruction}{program}$\\\\
+Then the following equation reflects the $30\%$ reduction in execution time and a $20\%$ increase in CPI as stated in the problem, where the variable $n$ is the Clock Rate increase factor.\\\\
+$7 \frac{seconds}{program} = \frac{1 sec}{n3\times10^9 cycles} \times \frac{1.2 \cdot 1.5 cycles}{instruction} \times \frac{20 \times 10^9 instruction}{program} = $
+$\frac{36 \times 10^{9} second}{n3\times 10^{9} program}$\\\\
+$\frac{36 \times 10^{9}}{21 \times 10^{9}} = n \approx 1.7$ increase in the clock rate for P1.\\\\
+The same is true for P2 $10 \frac{seconds}{program} = \frac{1 sec}{2.5\times10^9 cycles} \times \frac{1.0 cycles}{instruction} \times \frac{25 \times 10^9 instruction}{program}$\\\\
+Then the following equation reflects the $30\%$ reduction in execution time and a $20\%$ increase in CPI as stated in the problem, where the variable $n$ is the Clock Rate increase factor.\\\\
+$7 \frac{seconds}{program} = \frac{1 sec}{n2.5\times10^9 cycles} \times \frac{1.2 \cdot 1.0 cycles}{instruction} \times \frac{25 \times 10^9 instruction}{program} = $
+$\frac{30 \times 10^{9} second}{n2.5\times 10^{9} program}$\\\\
+$\frac{30 \times 10^{9}}{17.5 \times 10^{9}} = n \approx 1.7$ increase in the clock rate for P2.\\\\
+P3's cycle rate should also be increased by 1.7
+\section*{1.6}
+P2 is faster by approximately 1.6 times. To determine this I used the equation in the book for CPU time:\\\\
+%\; is to add a space between words in Math Mode
+$CPU\;Time = Instruction\;Count \times CPI \times Cycle\;Time$\\\\
+To use this equation, first I needed to convert the given clock rate of each processor to a Cycle Time.\\\\
+P1 Cycle Time = $\frac{1}{2.5 \times 10^{9}} = .000000000400 = 400_ps$\\\\
+P2 Cycle Time = $\frac{1}{3.0 \times 10^{9}} = .000000000333 = 333_ps$\\\\
+P1 $CPU\;Time = I + 2.6 + 400_ps = I \times 1040_ps$\\\\
+P2 $CPU\;Time = I + 2.0 + 333_PS = I \times 666_ps$  Faster!\\\\
+P2 is faster by $\frac{1040}{666} = 1.561561562 \approx 1.6$ times faster.
+\subsection*{a.}
+I used the equation $CPI = \frac{Clock\;Cycles}{Instruction Count}$ to determine the CPI of each processor.\\\\
+P1 $CPI = \frac{2,600,000}{1,000,000} = 2.6$\\\\
+P2 $CPI = \frac{2,000,00}{1,000,000} = 2$\\\\
+\subsection*{b.}
+I used the equation $ Clock\;Cycles = \sum\limits_{i=1}^n (CPI_i \times Instruction\;Count)$\\\\
+P1 $Clock\;Cycles = 1\times 100,000 + 2\times200,000+3\times500,000 + 3\times 200,000 = 2,600,000$\\\\
+P2 $Clock\;Cycles = 2\times 100,000 + 2\times200,000+2\times500,000 + 2\times 200,000 = 2,000,000$\\\\
+\section*{1.7}
+\subsection*{a.}
+Using the equation $CPU\;Time = Instruction\;Count \times CPI \times Clock\;Cycle\;Time$\\\\
+With Compiler A\\
+\indent $1.1 = 1,000,000,000 \times CPI \times 0.000000001$\\
+\indent $1.1 = 1 \times CPI$\\
+\indent $CPI = 1.1$\\\\
+With Compiler B\\
+\indent $1.5 = 1,200,000,000 \times CPI \times 0.000000001$\\
+\indent $1.5 = 1.2 \times CPI$\\
+\indent $CPI = 1.25$
+\subsection*{b.}
+If the execution time is the same then...\\
+$\frac{Instruction\;Count_A \times CPI}{Clock\;Rate_A} = \frac{Instruction\;Count_B \times CPI}{Clock\;Rate_B}$\\\\
+$\frac{1,000,000,000 \times CPI}{Clock\; Rate_A} = \frac{1,200,000,000 \times CPI}{Clock\;Rate_B}$\\\\
+The clock running compiler A's code is 1.2 times faster.
+\subsection*{c.}
+With the new compiler: $CPU\;Time = 6.0\times 10^{8} \times 1.1 \times 0.000000001$\\\\
+\indent $CPU\;Time = .66\;seconds$\\\\
+\indent This is $\frac{1.1\;seconds}{0.66\;seconds} \approx 1.66$ times faster than compiler A\\\\
+\indent This is $\frac{1.5\;seconds}{0.66\;seconds} \approx 2.27$ times faster than compiler B\\\\
+\section*{1.8}
+\subsection*{1.8.1}
+Using the equation $Capacitive\;Load = \frac{Power}{Voltage^{2}\times Frequency}$\\\\
+For the Pentium 4: $Capacitive\;Load = \frac{100}{1.25^{2}\times 3.6 \times 10^(9)} = 1.8\times10^{-8}$\\\\
+For the Core i5  : $Capacitive\;Load = \frac{70}{0.9^{2}\times 3.4 \times 10^(9)} = 2.5\times10^{-8}$\\\\
+\subsection*{1.8.2}
+For the Pentium 4, since the total power consumed is 100 (10 watts static and 90 watts dynamic) then 10\% of the total is Static.\\\\
+The ratio of static power to dynamic power is $\frac{10}{90} = \frac{1}{9} \approx 0.111111$\\\\
+For the Core i5, since the total power consumed is 70 watts (30 W of static and 40 W of dynamic) then the total static is:\\
+$\frac{70}{100} = \frac{n}{30}$  \hspace{10mm}   $\frac{2100}{100} = n = 21\%$\\\\
+The ratio of static power to dynamic power is $\frac{0.21}{0.28} = 0.75$\\\\
+\subsection*{1.8.3}
+Using $Power_d + Power_s = voltage^{2} \times frequency \times capacitive load$\\\\
+since we want to maintain the same leakage current only $Power_d$ is reduced by 10\% and n will be the factor that the voltage is reduced by.\\\\
+Pentium 4: $90(.9) + 10 = n1.25^{2} \times 3.6\times10^{9}\times1.8\times10^{-8}$\\
+\indent$90 = n101.25$\indent$n\approx0.8893$\\
+\indent The voltage should be reduced by about 11\%\\\\
+Core i5: $40(.9) + 30 = n0.9^{2} \times 3.4\times10^{9}\times2.5\times10^{-8}$\\
+\indent$66 = n68.85$\indent$n\approx0.9586$\\
+\indent The voltage should be reduced by about 4\%
+\section*{1.11}
+\subsubsection*{1.11.1}
+$CPI = \frac{CPU\;Time}{IC \times Cycle\;Time}$\\\\
+\indent$= \frac{750}{2.389\times 10^{12} \times 3.33\times10^{-10}}$\\\\
+\indent$= 0.942759419$ \indent or \indent $\approx0.94$\\\\
+\subsection*{1.11.2}
+SPECratio $= \frac{Reference Time}{Execution Time} = \frac{9650}{750} = \frac{193}{15} \approx 12.87$\\\\
+\subsubsection*{1.11.3}
+n represents the factor by which the CPU time is increased if the instruction count is increased by 10\%\\\\
+$0.942759419 = \frac{750n}{(1.1)2.389\times10^{12}\times 3.33\times10^{-10}}$\\\\
+$824.999=750n$\\\\
+$n=1.1$\indent CPU execution time is increased 10\%\\\\
+\indent the new CPU Execution time is 825 seconds
+\subsection*{1.11.4}
+n represents the factor by which the CPU time is increased if the instructions are increased by 10\% and the CPI is increased by 5\%\\\\
+$(1.05)0.942759419=\frac{750n}{((1.1)2.389\times10^{12})(3.33\times10^{-10})}$\\\\
+$0.98989739 = \frac{750n}{875.0907}$\\\\
+$866.24999 = 750n$\\\\
+$n = 1.15$\indent The CPU execution time is increased by 15\%\\\\
+\indent the new CPU Execution time is 862.5 seconds
+\subsection*{1.11.5}
+The new SPECratio is $\frac{9650}{862.5}$ \indent $\approx 11.19$
+\subsection*{1.11.6}
+$CPI = \frac{700}{((0.85)2.389\times10^{12})(2.5\times10^{-10})}$\\\\
+\indent $= \frac{700}{507.6625}$\\\\
+\indent $= 1.378868$ \indent $\approx 1.38$
+\subsection*{1.11.7}
+Since the clock rate was increased there will be more clock cycles per instruction and yield a larger CPI
+\subsection*{1.11.8}
+I used the proportion $\frac{750}{100} = \frac{700}{n}$ where n is the percentage of the previous CPU time\\\\
+$750n = 70000$ \indent $n = 93.333$\indent CPU time reduced by about 7\%
+%\includegraphics[width=6in]{image.jpg}\\
+\end{document}
