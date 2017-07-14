@@ -1,0 +1,154 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\title{CS146 - Homework 2}
+\author{Frank Mock}
+\begin{document}
+\maketitle
+\section*{2.1}
+Order is from the slowest growth to the greatest\\
+\begin{itemize}
+\item $37$
+\item $\sqrt{N}$
+\item $2/N$
+\item $N$
+\item $Nlog(log(N))$
+\item $Nlog(N)$
+\item $Nlog(N^2)$
+\item $Nlog^2N$
+\item $N^{1.5}$
+\item $N^2$
+\item $N^2logN$
+\item $N^3$
+\item $2^{N/2}$
+\item $2^N$
+\end{itemize}
+\newpage
+\section*{2.4}
+Prove that for any constant, $k$, $log^kn = o(n)$.\\\\
+$log^kn = (logn)^k$ which is an exponential expression.\\\\
+A function is polylogarithmically bounded is $f(n) = O(log^kn)$ for some constant k.\\\\
+The growth rates of polynomials and exponentials can be related as such: $\forall$ real constants a and b such that  $a > 1$ \hspace*{.5 cm} $\displaystyle \lim_{n \to \infty}\frac{n^b}{a^n} = 0$\\\\
+This means that any exponential function with a base greater than one grows faster than any polynomial function. $n^b = o(a^n)$.\\\\ Using the same logic, we can also relate the growth of polynomials and polylagarithms by substituting $log n$ for $n$ and $2^a$ for a in the limit above.\\\\
+$\displaystyle \lim_{n \to \infty}\frac{log^bn}{(2^a)^{logn}} = \lim_{n \to \infty}\frac{log^bn}{n^a} = 0$\\\\
+The above limit shows that $log^bn = o(n^a)$ for any constant $a > 0$ and that the polynomial function grows faster than any polylogarithmic function. This is what was to be proved.
+
+\scriptsize (Introduction To Algorithms by Cormen pages 55 - 57 was referenced to help complete this proof.)\small
+\newpage
+\section*{2.7}
+\subsection*{1.a}
+O(n) because, 1 for the assignment of line 1, 1 + n + n for the for-loop, and n for line 3 which gives 3n + 2
+\subsection*{1.b}
+\begin{itemize}
+\item[$n=10$] 1816 ns
+\item[$n=100$] 3283 ns
+\item[$n=1000$] 18159 ns
+\end{itemize}
+\subsection*{1.c}
+The actual running times don't exactly match, but considering other factors pertaining to my machine they are reasonable.
+\subsection*{2.a}
+O($n^2$) because, 1 for the assignment of line one, 1 + n + n for line 2, 1 + n + n for line 3, and n for line 4 which gives $4n^2 + n + 3$
+\subsection*{2.b}
+\begin{itemize}
+\item[$n=10$] 3561 ns
+\item[$n=100$] 252476 ns
+\item[$n=1000$] 11127741 ns
+\end{itemize}
+\subsection*{2.c}
+The actual run-time results are worse than my estimate of O($n^2$), but it's probably due to my machine
+\newpage
+Exercise 2.7 continued from previous page.
+\subsection*{3.a}
+O($n^3$) because, 1 for assignment of line one, 1 + n + n for line two, 1 + $n^2$ +n for line three, and n for line four which gives about $2n^3 + 3n^2 + n + 3$
+\subsection*{3.b}
+\begin{itemize}
+\item[$n=10$] 20883 ns
+\item[$n=100$] 10460966 ns
+\item[$n=1000$] 977206042 ns
+\end{itemize}
+\subsection*{3.c}
+When I compare these run-times to the O($n^2$) run-times of the previous code analysis, these seem to be follow the estimated run-time
+\subsection*{4.a}
+O($n^2$) because, 1 for the assignment of line one, 1 + n + n for line two, 1 + n + n for line three, and n for line four. Which gives approximately $4n^2 + n + 3$
+\subsection*{4.b}
+\begin{itemize}
+\item[$n=10$] 3352 ns
+\item[$n=100$] 158749 ns
+\item[$n=1000$] 4228959 ns
+\end{itemize}
+\subsection*{4.c}
+When I compare these to code item 2 which I said was also O($n^2$), the numbers look pretty close.
+\newpage
+\subsection*{5.a}
+O($n^3$) My computer had a hard time computing this code so I expect it to be at least cubic.
+\subsection*{5.b}
+\begin{itemize}
+\item[$n=10$] 230546 ns
+\item[$n=100$] 97647736 ns
+\item[$n=1000$] \scriptsize *My computer could not compute for this value of n. I aborted execution because it never ended*\small
+\end{itemize}
+\subsection*{5.c}
+The run-time is comparable to the Big-Oh estimate
+\subsection*{6.a}
+O($n^3$) because, 1 for line one, 1 + n + n for line two, 1 + $n^2$ + n for line three, $\frac{n}{2}$ for line four, 1 + n + n for line five and n for line six. This gives approximately $4n^3 + 7n^2 + 2n + 5$
+\subsection*{6.b}
+\begin{itemize}
+\item[$n=10$] 29054 ns
+\item[$n=100$] 19675406 ns
+\item[$n=1000$] \scriptsize *My computer could not compute for this value of n. I aborted execution because it never ended*\small
+\end{itemize}
+\subsection*{6.c}
+The run-time is comparable to the Big-Oh estimate.
+\newpage
+\section*{2.11}
+\begin{itemize}
+\item[a.] linear $\displaystyle \frac{.5 ms}{100} = \frac{n}{500}$ \hspace*{.5 cm} $500(.5 ms) = 100n$ \hspace*{.5 cm} $n = 2.5 ms$
+\item[b.] O(NlogN)\hspace*{.2 cm}$\displaystyle \frac{.5 ms}{100} = \frac{n log n}{500}$ \hspace*{.5 cm} $500(.5) = 100n$ \hspace*{.5 cm} $\frac{5}{2} = n log n$ \hspace*{.5 cm} $2^{\frac{5}{2}} = 2^{n log n}$\\
+$2^{\frac{5}{2}} = n^{n log 2}$ \hspace*{.5 cm} $2^{\frac{5}{2}} = n^n$
+\item[c.] quadratic: For input size of 1 it takes\hspace*{.5 cm} $\displaystyle \frac{.5 ms}{100} = \frac{n^2ms}{1}$ \hspace*{.5 cm} $\sqrt{\frac{.5}{100}} = n$ \hspace*{.5 cm} then for input size of 500 it takes, \hspace*{.5 cm} $500(\sqrt{\frac{.5}{100}}) \approx 35.35 ms$
+\item[d.] cubic: For input size of 1 \hspace*{.5 cm} $\displaystyle \frac{.5 ms}{100} = \frac{n^3ms}{1}$ \hspace*{.5 cm} $\sqrt[3]{\frac{.5}{100}} = n$ \hspace*{.5 cm} then for an input size of 500 it takes $500(\sqrt[3]{\frac{.5}{100}}) \approx 85.50ms$
+\end{itemize}
+\section*{2.15}
+Since the array is sorted $A_1 < A_2 < A_3 < ... < A_n$ I would use some sort of divide and conquer routine which would have a run-time of O($logN$)
+\begin{verbatim}
+boolean findInteger(int[] A, int i)
+{
+    int begin = 0;
+    int end = n - 1;
+       
+    do
+    {
+       int x = (begin + end)/2;  //keep dividing in half
+       if(A[x] == i)
+           return true;
+       else if(i < A[x])
+           end = x - 1;
+       else
+           begin = x + 1;
+    }while(begin <= end)
+    return false;
+}
+\end{verbatim}
+\newpage
+\section*{2.25}
+\begin{itemize}
+\item[a.] Program A because, $\displaystyle 150Nlog_2N$ can be re-written as $Nlog_2N^{150}$ which is referred to as a polylogarithmic function. I showed in homework question 2.4 any polynomial grows faster than any polylogarithmic function as n gets very large.
+\item[b.] Program B is better for small values of n and is the program I would use if I knew for certain that the input data would never be very large.\\\\
+The chart below shows that for large values of N Program B is better and for small values of N Program A is better.
+\begin{center}
+\begin{tabular}{||p{1.2cm}|p{2.4cm}|p{2.8cm}||}
+\hline
+\textbf{N} & \textbf{$N^2$} & \textbf{$150Nlog_2N$} \\ \hline
+20 & 400 & 12,966 \\ \hline
+60 & 3,600 & 53,162 \\ \hline
+80 & 6,400 & 75,863 \\ \hline
+150 & 22,500 & 162,648 \\ \hline
+1,000 & 1,000,000 & 1,494,868 \\ \hline
+10,000 & 100,000,000 & 19,931,569 \\ \hline
+100,000 & 10,000,000,000 & 249,144,607 \\ \hline
+\end{tabular}
+\end{center}
+\item[c.] Program A. Please refer to chart above.
+\item[d.] No, it is not possible that program B will run better on all possible inputs.
+\end{itemize}
+%\includegraphics[width=6in]{image.jpg}\\
+\end{document}

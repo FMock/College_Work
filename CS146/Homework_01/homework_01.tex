@@ -1,0 +1,80 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\title{CS146 - Homework}
+\author{Frank Mock}
+\begin{document}
+\maketitle
+\section*{1.5}
+\begin{verbatim}
+  public static int NumOfOnes(int n)
+  {
+  	if(n == 0) //Base Case
+  	   return 0;
+  	   
+  	if(n%2 == 0) //n is an even number
+  	   return NumOfOnes(n/2);
+  	else
+  	   return 1 + NumOfOnes(n/2);
+  }
+\end{verbatim}
+\section*{1.7a.}
+To Prove: $log x < x$ for all $x > 0$\\
+Consider the function $g(x) = x - log(x)$ for any real value of $x > 0$\\
+$g(x) = x - \frac{ln(x)}{ln(2)}$   re-written using change of base\\
+$g'(x) = 1 - \frac{1}{ln(2)*x}$   by taking the first derivative\\
+Critical point is at $x = \frac{1}{ln(2)}$. The function $g(x)$ has a negative slope before this point and a positive slope after this point. Thus $x = \frac{1}{ln(2)}$ gives an absolute minimum for the function $g(x)$ on $x > 0$.
+Since $g(\frac{1}{ln(2)}) > 0$ the value of $g(x)$ before and after $x = \frac{1}{ln(2)}$ must be positive.\\
+Therefore, $log(x)$ must be less than $x$ for $x - log(x)$ to be $> 0$ which is what was to be proved.
+\newpage
+\section*{1.7b.}
+To Prove: $log(A^B) = (B)log(A)$ \hspace*{.3 cm} Note: Using base 2 for logarithm\\
+Let $log A = C$ \small{equation $1^\star$}\\
+Which is $2^C = A$ by definition of logarithm \\
+Raise each side to the $B$ power for some integer $B$.\hspace*{1.5 cm} $(2^C)^B = A^B$\\
+Re-write L.H.S using rule of exponent multiplication. \hspace*{1.2 cm} $2^{CB} = A^B$\\
+Take the $log$ of both sides. \hspace*{5.2 cm} $log 2^{CB} = log A^B$\\
+Using logarithm rule change the L.H.S. \hspace*{3.7 cm} $CB = log A^B$\\
+Substitute the value of C from \small{equation $1^\star$} on the L.H.S \hspace*{.3 cm} $log A B = log A^B$\\
+Re-arrange the product on the L.H.S \hspace*{3.2 cm} $(B)log A = log A^B$\\
+Which is what was to be proved.
+\section*{1.8a.}
+$\displaystyle S_{\infty} = \sum_{i=0}^{\infty}\frac{1}{4^i} = \frac{1}{4^0} + \frac{1}{4^1} + \frac{1}{4^2} + ... + \frac{1}{4^{\infty}}$\\
+$\displaystyle S_{\infty} = \sum_{i=0}^{\infty}\frac{1}{4^i} = 1 + \frac{1}{4} + \frac{1}{16} + ... + \frac{1}{4^{\infty}}$\\
+Formula for the sum of a convergent geometric series: $\frac{first\hspace*{.1 cm}term}{1 - common\hspace*{.1 cm}ratio}$ or $\frac{a_{1}}{1 - r}$\\
+$\displaystyle S_{\infty} = \frac{1}{1 - \frac{1}{4}} = \frac{1}{\frac{3}{4}} = \frac{4}{3}$
+\section*{1.8b.}
+$\displaystyle S_{\infty} = \sum_{i=0}^{\infty} \frac{i}{4^i}$\\\\
+$S_{1} = 0 + \frac{1}{4} = \frac{1}{4}$\\\\
+$S_{5} = 0 + \frac{1}{4} + \frac{1}{8} + \frac{3}{64} + \frac{1}{64} + \frac{5}{1024} = 0.44238$\\\\
+$S_{8} = 0 + \frac{1}{4} + \frac{1}{8} + \frac{3}{64} + \frac{1}{64} + \frac{5}{1024} + \frac{6}{4096} + \frac{7}{16384} + \frac{1}{8192} = 0.44439$\\\\
+By considering what number the partial sums are approaching:\\\\
+$\displaystyle S_{\infty} = \sum_{i=0}^{\infty} \frac{i}{4^i} = 0.444444444444 = \frac{4}{9}$
+\newpage
+\section*{1.9}
+Estimate $\displaystyle \sum_{i=\frac{n}{2}}^{n} \frac{1}{i}$\\
+$\displaystyle S_{1} = \frac{1}{\frac{1}{2}} = 2$\\\\
+$\displaystyle S_{2} = \frac{1}{\frac{2}{2}} + \frac{1}{\frac{2}{2}} = 1 + 1 = 2$\\\\
+$\displaystyle S_{3} = \frac{1}{\frac{3}{2}} + \frac{1}{\frac{3}{2}} + \frac{1}{\frac{3}{2}} = \frac{2}{3} + \frac{2}{3} + \frac{2}{3} = 2$\\\\
+$\displaystyle S_{4} = \frac{1}{\frac{4}{2}} + \frac{1}{\frac{4}{2}} + \frac{1}{\frac{4}{2}} + \frac{1}{\frac{4}{2}} = \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} = 2$\\\\
+$\displaystyle S_{n} = 2$
+\section*{1.11a.}
+$\displaystyle \sum_{i=1}^{n-2}F_{i} = F_{n} - 2$ where $F_{i}$ is defined as Fibonacci number.\\\\
+Proof will be by induction.\\\\
+Base Case: $n=3$ \hspace*{.5 cm} $\sum_{i=1}^{3-2}F_{1} = 1 = F_{3} - 2 = 3 - 2$ base case is good\\\\
+Assume true for all integers from base case up to $k$. $\displaystyle \sum_{i=1}^{k-2}F_{i} = F_{k} - 2$ \tiny{(Inductive Hypothesis)}\small\\\\
+Prove also true for $k + 1$ \hspace*{.5 cm} $\displaystyle \sum_{i=1}^{(k + 1)-2}F_{i} = F_{k + 1} - 2$\\\\
+By definition of Fibonacci number is $F_{k + 1} = F_{k} + F_{k - 1}$\\\\
+Change R.H.S. to $= F_{k} + F_{k - 1} - 2$\\\\
+Rearrange R.H.S $= F_{k} - 2 + F_{k - 1}$\\\\
+On R.H.S. substitute for $F_{k} - 2$ from the inductive hypothesis $\displaystyle = \sum_{i=1}^{k-2}F_{i} + F_{k - 1}$\\
+$\displaystyle = \sum_{i=1}^{k-2}F_{i} + \sum_{i=1}^{k+1}F_{k-1} = \displaystyle = \sum_{i=1}^{(k+1)-2}F_{i}$ which is the same as the L.H.S. End Proof.
+\newpage
+\section*{1.11b.}
+Prove $\displaystyle F_{n} < \phi^n$ with $\phi = \frac{1 + \sqrt{5}}{2}$\\\\
+In mathematics $\displaystyle \frac{1 + \sqrt{5}}{2}$ is defined as the golden ratio.\\\\
+The Fibonacci numbers are related to the golden ratio and its conjugate by the equation $\displaystyle F_{i} = \frac{\phi^i - \phi^i}{\sqrt{5}}$ \scriptsize (this is noted in the book Introduction To Algorithms, by Cormen, pg.59)\small\\\\
+Using this fact, the inequality can be re-written as $\displaystyle \frac{\phi^i - \phi^i}{\sqrt{5}} < \phi^{i}$\\\\
+Or more simply $\displaystyle \frac{\phi^i}{\sqrt{5}} < \phi^{i}$\\\\
+Which makes it obvious that the L.H.S. is less than the right since it is being divided by $\sqrt{5}$
+%\includegraphics[width=6in]{image.jpg}\\
+\end{document}

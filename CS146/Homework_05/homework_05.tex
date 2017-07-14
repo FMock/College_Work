@@ -1,0 +1,182 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usetikzlibrary{shapes,shadows,arrows}
+\title{CS146 - Homework 5}
+\author{Frank Mock}
+\begin{document}
+\maketitle
+
+\tikzstyle{block}=[draw, rectangle,fill=blue!10, text centered, text width = 4 em]
+\tikzstyle{line}=[draw, -latex']
+
+\scriptsize For 5.1 parts a - d, I used an initial hashtable size of 10 considering the input size is 7.
+\small
+\section*{5.1 a.}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Using Seperate Chaining} \\
+\hline
+0 & \\
+1 & $\rightarrow$4371\\
+2 & \\
+3 & $\rightarrow$6173$\rightarrow$1323\\
+4 & $\rightarrow$4344\\
+5 & \\
+6 & \\
+7 & \\
+8 & \\
+9 & $\rightarrow$1989$\rightarrow$9679$\rightarrow$4199\\
+\hline
+\end{tabular}
+\section*{5.1 b.}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Using Linear Probing} \\
+\hline
+0 & 9679\\
+1 & 4371\\
+2 & 1989\\
+3 & 1323\\
+4 & 6173\\
+5 & 4344\\
+6 & \\
+7 & \\
+8 & \\
+9 & 4199\\
+\hline
+\end{tabular}
+\newpage
+\section*{5.1 c.}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Using Quadratic Probing} \\
+\hline
+0 & 9679\\
+1 & 4371\\
+2 & \\
+3 & 1323\\
+4 & 6173\\
+5 & 4344\\
+6 & \\
+7 & \\
+8 & 1989\\
+9 & 4199\\
+\hline
+\end{tabular}
+\vspace{.75 in}
+\section*{5.1 d.}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{Using $h_2(x)=7-(x$ mod 7)} \\
+\hline
+0 & \\
+1 & 4199\\
+2 & 9679\\
+3 & 4344\\
+4 & 4371\\
+5 & \\
+6 & 1989\\
+7 & 1323\\
+8 & 1673\\
+9 & \\
+\hline
+\end{tabular}
+\newpage
+\section*{5.14}
+\textit{Describe a procedure that avoids initializing a hash table (at the expense of memory)}\\
+After much thought, I came up with a method that uses a linked list and splay tree. Assuming we want to keep the constant time O(1) insertion of a hash table, we could make all insertions at the head of a linked list of nodes of key and value pairs. The key is what the data mapped to after being hashed and the value is the data item. All the keys would not necessarily be unique since collisions can occur. The splay tree would only be built when an item needs to be accessed. When an access request is made, the tree that is built should be somewhat balanced due to the relatively uniqueness of the keys produced during hashing. The initial building of the tree would have the greatest cost, O(n log n) since the whole list is iterated over as each item is placed in the tree. Therefore, the first access would incur a O(n log n) hit. However, with each additional access operation the splay process will float the item being accessed to the top of the tree (root of the tree) and in the process balance the tree. Deep access will have a greater affect than shallow ones. If the same item is accessed again (consecutive access), the time cost would be a constant time operation.\\\\
+Future insertions would build a new linked list of nodes containing key and value pairs, which again guarantees constant time O(1) insertion. However, there is a difference with future access operations. If the item being requested is already in the tree, it is not necessary to "dump" the items of the linked list into the splay tree. You simply traverse the tree and return it. The splay tree operations will float this item to the top. This does not break the log(n) after m accesses guarantee of splay trees. In fact, even if the item is not already in the tree and the items of the linked list must be added to the splay tree it still does not break the $mlog(n)$ guarantee of splay tress as long as there is a fairly good balance of insertions and access operations. The added constant of building each new linked list is amortized over all operations and you still get a $mlog(n)$ for access operations and O(1) for insertions.
+My method to deal with the problem presented would definitely be taxing on the memory since it would require lots of pointers, but it does not initialize a hash table (array).
+\newpage
+\section*{5.19} 
+\subsection*{a.}
+$\displaystyle \frac{1}{(1-\lambda)-\lambda - ln(1-\lambda)}$
+\\This is the same as the given cost for insertion, because insertions and unsuccessful searches require the same number of probes.
+\subsection*{b.}
+Expected cost of a successful search, is the average value of the computed time for each of the \textit{n} keys in the hash table using the given insertion time as a function of lamda.\\
+let $\displaystyle y = f(\lambda) = \frac{1}{(1-\lambda)-\lambda - ln(1-\lambda)}$\\\\
+$\displaystyle y_{avg} = \frac{\int_{m-n}^m f(\lambda) d\lambda}{\lambda}$ \hspace*{.12 in} \scriptsize \textit{n} is the number of keys in the hash table and m is the hash table size\\\\
+\small%sets the text size back to what it was before declaring \scriptsize
+\hspace*{.3 in}$\displaystyle  = \frac{1}{\lambda} \int_{m-n}^m f(\lambda) d\lambda$\\\\
+\hspace*{.3 in}$\displaystyle  = \frac{1}{\lambda} \int_{m-n}^m \frac{1}{(1-\lambda)-\lambda - ln(1-\lambda)} d\lambda$\\\\
+My calculus is rusty. I have tried to integrate this numerous times, but nothing I come up with looks reasonable (all messy).\\\\
+I suspect that the cost of unsuccessful searches/insertions is greater than successful searches\\\\
+$\displaystyle \frac{1}{(1-\lambda)-\lambda - ln(1-\lambda)}  > \frac{1}{\lambda} \int_{m-n}^m \frac{1}{(1-\lambda)-\lambda - ln(1-\lambda)} d\lambda$
+\newpage
+\section*{5.27}
+Extendible hashing data structure with M = 4.
+After inserting 10111101, 00000010, 10011011, 10111110, 01111111, 01010001, 10010110, 00001011, 11001111. The third leaf is full.\\\\
+\begin{tikzpicture}
+%directory D = 2
+\node[block](00){00};
+\node[block, xshift=4.7 em](01){01};
+\node[block, xshift=8.8 em](10){10};
+\node[block, xshift=13 em](11){11};
+%leafs with m = 4
+\node[block, below of=00, xshift=-.5em, yshift=-4em](leaf_01){(2)\\ \vspace*{.5 cm}00000010\\00001011\vspace*{.95 cm}};
+\node[block, below of=01, yshift=-4em](leaf_02){(2)\\ \vspace*{.5 cm}01111111\\01010001\vspace*{.95 cm}};
+\node[block, below of=10, xshift=1em, yshift=-4em](leaf_03){(2)\\ \vspace*{.5 cm}10111101\\10011011\\10111110\\10010110};
+\node[block, below of=11, xshift=2em, yshift=-4em](leaf_04){(2)\\ \vspace*{.5 cm}11001111\vspace*{1.5 cm}};
+%arrows
+\path[line](00)--(leaf_01);
+\path[line](01)--(leaf_02);
+\path[line](10)--(leaf_03);
+\path[line](11)--(leaf_04);
+\end{tikzpicture}
+\\\\\\Next 10011110 is inserted which causes the third leaf to split.\\\\
+\begin{tikzpicture}
+%directory D = 2
+\node[block](000){000};
+\node[block, xshift=4.7 em](001){001};
+\node[block, xshift=9.4 em](010){010};
+\node[block, xshift=13.7 em](011){011};
+\node[block, xshift=18 em](100){100};
+\node[block, xshift=22 em](101){101};
+\node[block, xshift=26.5 em](110){110};
+\node[block, xshift=31 em](111){111};
+%leafs with m = 4
+\node[block, below of=000, xshift=-.5em, yshift=-4em](leaf_01){(2)\\ \vspace*{.5 cm}00000010\\00001011\vspace*{.95 cm}};
+\node[block, below of=010, xshift=-3em, yshift=-4em](leaf_02){(2)\\ \vspace*{.5 cm}01111111\\01010001\vspace*{.95 cm}};
+\node[block, below of=100, xshift=-1em, yshift=-4em](leaf_03){(3)\\ \vspace*{.5 cm}10011011\\10010110\\10011110\vspace*{.5 cm}};
+\node[block, below of=101, xshift=.5 cm, yshift=-4em](leaf_04){(3)\\ \vspace*{.5 cm}10111101\\10111110\vspace*{1 cm}};
+\node[block, below of=111, xshift=-1em, yshift=-4em](leaf_05){(2)\\ \vspace*{.5 cm}11001111\vspace*{1.5 cm}};
+%arrows
+\path[line](000)--(leaf_01);
+\path[line](001)--(leaf_01);
+\path[line](010)--(leaf_02);
+\path[line](011)--(leaf_02);
+\path[line](100)--(leaf_03);
+\path[line](101)--(leaf_04);
+\path[line](110)--(leaf_05);
+\path[line](111)--(leaf_05);
+\end{tikzpicture}
+\\\\\\Next, 11011011, 00101011, 01100001, 11110000, 01101111 are inserted.\\
+\begin{tikzpicture}
+%directory D = 2
+\node[block](000){000};
+\node[block, xshift=4.7 em](001){001};
+\node[block, xshift=9.4 em](010){010};
+\node[block, xshift=13.7 em](011){011};
+\node[block, xshift=18 em](100){100};
+\node[block, xshift=22 em](101){101};
+\node[block, xshift=26.5 em](110){110};
+\node[block, xshift=31 em](111){111};
+%leafs with m = 4
+\node[block, below of=000, xshift=-.5em, yshift=-4em](leaf_01){(2)\\ \vspace*{.5 cm}00000010\\00001011\\00101011\vspace*{.5 cm}};
+\node[block, below of=010, xshift=-3em, yshift=-4em](leaf_02){(2)\\ \vspace*{.5 cm}01111111\\01010001\\01100001\\01101111\vspace*{.1 cm}};
+\node[block, below of=100, xshift=-1em, yshift=-4em](leaf_03){(3)\\ \vspace*{.5 cm}10011011\\10010110\\10011110\vspace*{.5 cm}};
+\node[block, below of=101, xshift=.5 cm, yshift=-4em](leaf_04){(3)\\ \vspace*{.5 cm}10111101\\10111110\vspace*{1 cm}};
+\node[block, below of=111, xshift=-1em, yshift=-4em](leaf_05){(2)\\ \vspace*{.5 cm}11001111\\11011011\\11110000\vspace*{.5 cm}};
+%arrows
+\path[line](000)--(leaf_01);
+\path[line](001)--(leaf_01);
+\path[line](010)--(leaf_02);
+\path[line](011)--(leaf_02);
+\path[line](100)--(leaf_03);
+\path[line](101)--(leaf_04);
+\path[line](110)--(leaf_05);
+\path[line](111)--(leaf_05);
+\end{tikzpicture}
+%\includegraphics[width=6in]{image.jpg}\\
+\end{document}

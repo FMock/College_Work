@@ -1,0 +1,308 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\title{Homework 3 - CS146}
+\author{Frank Mock}
+\begin{document}
+\maketitle
+\vspace*{1 in}
+\section*{3.7}
+O(n$^2$) because the trimToSize() method is causing extra work. It is reducing the capacity of the Arraylist after an integer is added to the array which doesn't leave any room for the next integer insertion so memory must be re-allocated.
+\newpage
+\section*{3.21}
+\scriptsize
+\begin{verbatim}
+import java.util.Scanner;
+import java.util.Stack;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+	/**
+	 * Frank Mock - CS146 - spring 2014
+	 * Reads text from a file and checks if the symbols are balanced.
+	 * This program does not tell you where or what caused an un-
+	 * balanced condition, only that the symbols in the text are
+	 * unbalanced. It does this by pushing symbols onto a stack and
+	 * removing them as appropriate. If the stack is not empty after
+	 * all the text has been read then there is an unbalanced symbol
+	 * condition.
+	 */
+
+public class BalancedSymbolsMain
+{	
+    public static void main(String[] args) throws FileNotFoundException
+    {
+        Stack<Character> symbolStack = new Stack<Character>();
+        Stack<Character> commentStack = new Stack<Character>();
+		
+        Scanner in = new Scanner(System.in);
+        //Get the file name from the user
+        System.out.println("Please enter input file name. Example: data.txt ");
+        String fileName = in.next();
+		
+        //Read the file
+        File file = new File(fileName);
+        Scanner input = new Scanner(file);
+        
+        while(input.hasNextLine())
+        {
+            String text = input.nextLine();
+            for(int i = 0; i < text.length(); i++)
+            {
+                if(text.charAt(i) == '(' 
+                || text.charAt(i) == '{' 
+                || text.charAt(i) == '[')
+                {
+                    symbolStack.push(text.charAt(i));
+                }
+                else if(text.charAt(i) == ')' 
+                     || text.charAt(i) == '}' 
+                     || text.charAt(i) == ']')
+                {
+                    if(symbolStack.empty())
+                        symbolStack.push(text.charAt(i));
+                    else
+                        symbolStack.pop();
+                }
+                else if(text.charAt(i) == '/')
+                {
+                    if(text.indexOf("/*") == i)
+                    {
+                        commentStack.push('/');
+                        commentStack.push('*');
+                    }
+                }
+                else if(text.charAt(i) == '*')
+                {
+                    if(text.indexOf("*/") == i)
+                    {
+                        if(commentStack.empty())
+                        {
+                        	commentStack.push('*');
+                        	commentStack.push('/');
+                        }
+                        else
+                        {
+                            commentStack.pop();
+                            commentStack.pop();                        
+                        }
+                    }
+                }
+            }
+            System.out.println(text);
+        }//end while loop
+		
+        if(symbolStack.isEmpty() && commentStack.isEmpty())
+            System.out.println("The symbols were balanced");
+        else
+            System.out.println("The symbols did not balance!");
+        in.close();
+        input.close();
+    }
+}
+\end{verbatim}
+\small
+Here are some screen shots showing the results of both balanced and unbalanced text input.\\\\\\
+\includegraphics[width=5.5 in]{bs01.jpg}\\
+\newpage
+\includegraphics[width=5 in]{bs06.jpg}\\\\
+\includegraphics[width=5 in]{bs07.jpg}\\\\
+\includegraphics[width=5 in]{bs08.jpg}\\\\
+\includegraphics[width=5 in]{bs09.jpg}\\\\
+\includegraphics[width=5 in]{bs10.jpg}\\\\
+\includegraphics[width=5 in]{bs11.jpg}\\\\
+\newpage
+\section*{3.22}
+\scriptsize
+\begin{verbatim}
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Stack;
+
+/*
+ * Frank Mock - CS146
+ * This program evaluates a postfix expression. When the user
+ * enters the expression at the commandline, operands and
+ * operators must be separated by a space. Also, this program
+ * assumes a correctly entered postfix expression. Use only
+ * +, -, *, / for addition, subtraction, multiplication and
+ * division respectively.
+ */
+public class EvalPostfixExpress
+{
+	public static void main(String[] args)
+	{
+      //the working stack
+      Stack<Integer> theStack = new Stack<Integer>();
+      //list of operators that will be used
+      ArrayList<String> operators = new ArrayList<String>();
+      operators.add("+");
+      operators.add("-");
+      operators.add("*");
+      operators.add("/");
+ 		
+      //Get a postfix expression from the user
+      System.out.println("Enter postfix expression. Seperate characters with a space.");
+      Scanner in = new Scanner(System.in);
+      String expression = in.nextLine();
+      expression.trim();
+        
+      //separate expression at spaces and put pieces into array
+      String[] characters = expression.split("\\s+");
+        
+      //evaluate expression using appropriate stack operations push or pop
+      for(String s : characters)
+      {
+      	if(!operators.contains(s))//its a number
+        {
+        	int num = Integer.parseInt(s);
+        	theStack.push(num);
+        }
+        else //its an operator
+        {
+        	int index = operators.indexOf(s);
+        	int b = theStack.pop();
+        	int a = theStack.pop();
+        		
+        	//determine which type of operator
+        	switch(index)
+        	{
+        	   case 0:
+        		   theStack.push(a + b);
+        		   break;
+        	   case 1:
+        		   theStack.push(a - b);
+        		   break;
+        	   case 2:
+        		   theStack.push(a * b);
+        		   break;
+        	   case 3:
+        		   theStack.push(a / b);
+        		   break;
+        	}
+        }
+      }//end loop
+      System.out.println("The answer is: " + theStack.pop());
+      in.close();
+   }
+}
+\end{verbatim}
+\small
+The following are some screen captures showing the program works correctly.\\\\
+\includegraphics[width=4 in]{postfix01.jpg}\\\\
+\includegraphics[width=4 in]{postfix02.jpg}\\\\
+\includegraphics[width=4 in]{postfix03.jpg}\\
+\newpage
+\section*{3.28}
+The following methods that perform an insertion use a method called reallocate that doubles the capacity of the circular array when it becomes full. Since the allocation is amoritized across each insertion, these methods are still considered a constant time operation O(1). I coded a class called QueueArray to ensure that the methods that follow are functional.\\
+\begin{itemize}
+\item front : an integer that stores the index of the front pointer
+\item back : an integer that stores the index of the back pointer
+\item size : an integer that keeps track of the number of elements
+\item capacity : an integer that keeps track of the array max capacity
+\item theData : a generic array to store data
+\end{itemize}
+\scriptsize
+\begin{verbatim}
+	/*
+	 * Adds an item to the front of the dequeue
+	 */
+	public boolean push(Type item)
+	{
+      if(size == capacity)
+      reallocate();
+	
+      front--;
+		
+      if(front < 0)
+      {
+         front = capacity - 1;
+         if(front == back)
+            reallocate();
+			
+         theData[capacity - 1] = item;
+      }
+      else if(front == back)
+      {
+         reallocate();
+         theData[capacity - 1] = item;
+      }
+      else
+      {
+         theData[front] = item;
+      }
+
+      size++;
+      return true;
+  }
+\end{verbatim}
+\newpage
+\begin{verbatim}
+    /*
+    * generic method that removes item at the front
+    */
+    public Type pop()
+    {
+       if(size == 0)
+          return null;
+       else
+       {
+          Type frontEntry = theData[front];
+          front = (front + 1) % capacity;
+          size--;
+          return frontEntry;
+       }
+    }
+
+
+
+    
+    /*
+    *generic method that inserts item at the rear end
+    */
+    public boolean inject(Type item)
+    {
+      if(size == capacity)
+         reallocate();
+         
+      size++;
+      back = (back + 1) % capacity;
+      theData[back] = item;
+      return true;
+    }
+
+
+
+
+    /*
+    * Remove the item from the rear of the queue
+    */
+    public Type eject()
+    {
+      if(size == 0)
+        return null;
+      else
+      {
+         size--;
+         back--;
+         return theData[back];
+       }
+     } 
+\end{verbatim}
+\newpage
+\small
+\section*{3.34a.}
+\begin{itemize}
+\item[1] Place a reference to the current node in a queue
+\item[2] While the next node doesn't equal null move to the next node
+\item[3] Compare the current node to the first item in the queue
+\item[4] If they match a cycle exists
+\item[5] GOTO 1
+\end{itemize}
+\section*{3.34b.}
+\begin{itemize}
+\item Place two iterators at the first node (call them begin and current)
+\item While current doesn't equal NULL
+\item[•] \hspace{.5 in} Advance to the next node
+\item[•] \hspace{.5 in} If current equals begin a cycle exists
+\end{itemize}
+\end{document}
