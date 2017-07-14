@@ -1,0 +1,96 @@
+Salary: 14500
+Name: Betty Boop
+Phone: 245-836-8357
+
+Salary: 23400
+Name: Igor Chevsky
+Phone: 385-375-8395
+
+Salary: 245700
+Name: Norma Corder
+Phone: 397-857-2735
+
+Salary: 20300
+Name: Steve Blenheim
+Phone: 238-923-7366
+
+Salary: 58900
+Name: Jennifer Cowan
+Phone: 548-834-2348
+
+Salary: 85100
+Name: Jon DeLoach
+Phone: 408-253-3122
+
+Salary: 85100
+Name: Karen Evich
+Phone: 284-758-2857
+
+Salary: 78900
+Name: Fred Fardbarkle
+Phone: 674-843-1385
+
+Salary: 35200
+Name: Lori Gortz
+Phone: 327-832-5728
+
+Salary: 268500
+Name: Barbara Kertz
+Phone: 385-573-8326
+
+Salary: 52600
+Name: Lesley Kirstin
+Phone: 408-456-1234
+
+Salary: 43500
+Name: William Kopf
+Phone: 846-836-2837
+
+Salary: 25000
+Name: Jesse Neal
+Phone: 408-233-8971
+
+Salary: 89500
+Name: Zippy Pinhead
+Phone: 834-823-8319
+
+Salary: 126000
+Name: Arthur Putie
+Phone: 923-835-8745
+
+Salary: 22350
+Name: Popeye Sailor
+Phone: 156-454-3322
+
+Salary: 95600
+Name: Jose Santiago
+Phone: 385-898-8357
+
+Salary: 24500
+Name: Sir Lancelot
+Phone: 837-835-8257
+
+Salary: 34200
+Name: Tommy Savage
+Phone: 408-724-0140
+
+Salary: 57000
+Name: Yukio Takeshida
+Phone: 387-827-1095
+
+Salary: 68900
+Name: Vinh Tranh
+Phone: 438-910-7449
+
+Salary: 123500
+Name: Paco Gutierrez
+Phone: 835-365-1284
+
+Salary: 56700
+Name: Ephram Hardy
+Phone: 293-259-5395
+
+Salary: 45000
+Name: James Ikeda
+Phone: 834-938-8376
+

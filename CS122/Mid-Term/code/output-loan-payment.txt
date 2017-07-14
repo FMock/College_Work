@@ -1,0 +1,5 @@
+Amortization Payment Calculator
+Enter loan amount: 700000
+Enter the annual interest rate 4
+Enter number of monthly payments. (ie. 5 years = 60 months)360
+Your monthly payment will be $3341.91

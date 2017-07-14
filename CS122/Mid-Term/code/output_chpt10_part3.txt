@@ -1,0 +1,23 @@
+**********Output for Part 3 Number 1.**************
+
+addresses.txt
+chapter_8_problems.pl
+chpt_10_part3.pl
+datebook.txt
+monthly-payment-formula.pl
+output-loan-payment.txt
+output_chpt10_part3.txt
+output_chpt8_problems.txt
+tellme-output.txt
+tellme.pl
+
+**********Output for Part 3 Number 2.**************
+
+addresses.txt
+chapter_8_problems.pl
+chpt_10_part3.pl
+monthly-payment-formula.pl
+output_chpt10_part3.txt
+output_chpt8_problems.txt
+tellme-output.txt
+tellme.pl

@@ -1,0 +1,27 @@
+*********Problem #2 output********
+Betty Boop:245-836-8357:635 Cutesy Lane, Hollywood, CA 91464:6/23/23:14500
+Barbara Kerz:385-573-8326:832 Ponce Drive, Gary, IN 83756:12/15/46:268500
+
+********Problem #4 output*********
+408-724-0140
+408-456-1234
+408-253-3122
+
+
+********Problem #10 output********
+Lesle Kerstin
+JonDeLoach
+Ephram Hardy
+Wilhelm Kopf
+Norma Corder
+James Ikeda
+Barbara Kerz
+
+
+********Problem #11 output********
+Norma Corder 3/28/45
+
+
+********Problem #12 output********
+02133
+34756
