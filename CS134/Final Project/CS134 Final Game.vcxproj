@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69559F7A-EDD1-4F12-90CD-60D9E41D0870}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CS134FinalGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\CodeLibraries\FMOD\inc;C:\CodeLibraries\SDL\include;C:\CodeLibraries\GLEW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CodeLibraries\FMOD\lib;C:\CodeLibraries\SDL\lib\x86;C:\CodeLibraries\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\CodeLibraries\FMOD\inc;C:\CodeLibraries\SDL\include;C:\CodeLibraries\GLEW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\CodeLibraries\FMOD\lib;C:\CodeLibraries\SDL\lib\x86;C:\CodeLibraries\GLEW\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodL_vc.lib;glew32.lib;glu32.lib;SDL2.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>fmod_vc.lib;glew32.lib;glu32.lib;SDL2.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundDef.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="DrawUtils.cpp" />
+    <ClCompile Include="game_state.cpp" />
+    <ClCompile Include="gem.cpp" />
+    <ClCompile Include="gems.cpp" />
+    <ClCompile Include="hit.cpp" />
+    <ClCompile Include="KeyStates.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="lives.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="pumpkin.cpp" />
+    <ClCompile Include="score.cpp" />
+    <ClCompile Include="skeleton.cpp" />
+    <ClCompile Include="skeleton_red.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="AnimationData.h" />
+    <ClInclude Include="AnimFrameData.h" />
+    <ClInclude Include="BackgroundDef.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="DrawUtils.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="game_data.h" />
+    <ClInclude Include="game_state.h" />
+    <ClInclude Include="gem.h" />
+    <ClInclude Include="gems.h" />
+    <ClInclude Include="hit.h" />
+    <ClInclude Include="KeyStates.h" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="lives.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="pumpkin.h" />
+    <ClInclude Include="score.h" />
+    <ClInclude Include="skeleton.h" />
+    <ClInclude Include="skeleton_red.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\back01.tga" />
+    <None Include="images\back02.tga" />
+    <None Include="images\back03.tga" />
+    <None Include="images\boulder.tga" />
+    <None Include="images\bullet.tga" />
+    <None Include="images\flowers.tga" />
+    <None Include="images\front01.tga" />
+    <None Include="images\front02.tga" />
+    <None Include="images\front03.tga" />
+    <None Include="images\front_shoot01.tga" />
+    <None Include="images\front_shoot02.tga" />
+    <None Include="images\front_shoot03.tga" />
+    <None Include="images\game_over.tga" />
+    <None Include="images\game_paused.tga" />
+    <None Include="images\gem01.tga" />
+    <None Include="images\gem02.tga" />
+    <None Include="images\gem03.tga" />
+    <None Include="images\gems.tga" />
+    <None Include="images\gr04.tga" />
+    <None Include="images\gr05.tga" />
+    <None Include="images\gr10.tga" />
+    <None Include="images\gr11.tga" />
+    <None Include="images\gr12.tga" />
+    <None Include="images\gr13.tga" />
+    <None Include="images\gr14.tga" />
+    <None Include="images\gr15.tga" />
+    <None Include="images\gr16.tga" />
+    <None Include="images\gr17.tga" />
+    <None Include="images\gr18.tga" />
+    <None Include="images\hit_00.tga" />
+    <None Include="images\hit_01.tga" />
+    <None Include="images\hit_02.tga" />
+    <None Include="images\hit_03.tga" />
+    <None Include="images\hit_04.tga" />
+    <None Include="images\hit_05.tga" />
+    <None Include="images\hit_06.tga" />
+    <None Include="images\hit_07.tga" />
+    <None Include="images\hit_08.tga" />
+    <None Include="images\left01.tga" />
+    <None Include="images\left02.tga" />
+    <None Include="images\left03.tga" />
+    <None Include="images\left_shoot01.tga" />
+    <None Include="images\left_shoot02.tga" />
+    <None Include="images\left_shoot03.tga" />
+    <None Include="images\level.tga" />
+    <None Include="images\lives.tga" />
+    <None Include="images\num0.tga" />
+    <None Include="images\num1.tga" />
+    <None Include="images\num2.tga" />
+    <None Include="images\num3.tga" />
+    <None Include="images\num4.tga" />
+    <None Include="images\num5.tga" />
+    <None Include="images\num6.tga" />
+    <None Include="images\num7.tga" />
+    <None Include="images\num8.tga" />
+    <None Include="images\num9.tga" />
+    <None Include="images\player_hit.tga" />
+    <None Include="images\player_hit_back.tga" />
+    <None Include="images\player_hit_front.tga" />
+    <None Include="images\player_hit_left.tga" />
+    <None Include="images\pumpkin01.tga" />
+    <None Include="images\pumpkin02.tga" />
+    <None Include="images\pumpkin03.tga" />
+    <None Include="images\pumpkin04.tga" />
+    <None Include="images\pumpkin05.tga" />
+    <None Include="images\pumpkin06.tga" />
+    <None Include="images\pumpkin07.tga" />
+    <None Include="images\pumpkin08.tga" />
+    <None Include="images\right01.tga" />
+    <None Include="images\right02.tga" />
+    <None Include="images\right03.tga" />
+    <None Include="images\right_shoot01.tga" />
+    <None Include="images\right_shoot02.tga" />
+    <None Include="images\right_shoot03.tga" />
+    <None Include="images\rocks.tga" />
+    <None Include="images\score.tga" />
+    <None Include="images\skeleton_down01.tga" />
+    <None Include="images\skeleton_down02.tga" />
+    <None Include="images\skeleton_down03.tga" />
+    <None Include="images\skeleton_down04.tga" />
+    <None Include="images\skeleton_down_red01.tga" />
+    <None Include="images\skeleton_down_red02.tga" />
+    <None Include="images\skeleton_down_red03.tga" />
+    <None Include="images\skeleton_down_red04.tga" />
+    <None Include="images\skeleton_hurt01.tga" />
+    <None Include="images\skeleton_hurt02.tga" />
+    <None Include="images\skeleton_hurt03.tga" />
+    <None Include="images\skeleton_hurt04.tga" />
+    <None Include="images\skeleton_hurt05.tga" />
+    <None Include="images\skeleton_hurt06.tga" />
+    <None Include="images\skeleton_left01.tga" />
+    <None Include="images\skeleton_left02.tga" />
+    <None Include="images\skeleton_left03.tga" />
+    <None Include="images\skeleton_left_red01.tga" />
+    <None Include="images\skeleton_left_red02.tga" />
+    <None Include="images\skeleton_left_red03.tga" />
+    <None Include="images\skeleton_right01.tga" />
+    <None Include="images\skeleton_right02.tga" />
+    <None Include="images\skeleton_right03.tga" />
+    <None Include="images\skeleton_right_red01.tga" />
+    <None Include="images\skeleton_right_red02.tga" />
+    <None Include="images\skeleton_right_red03.tga" />
+    <None Include="images\skeleton_stand_still01.tga" />
+    <None Include="images\skeleton_stand_still02.tga" />
+    <None Include="images\skeleton_stand_still03.tga" />
+    <None Include="images\skeleton_stand_still04.tga" />
+    <None Include="images\skeleton_stand_still05.tga" />
+    <None Include="images\skeleton_stand_still06.tga" />
+    <None Include="images\skeleton_stand_still07.tga" />
+    <None Include="images\skeleton_stand_still08.tga" />
+    <None Include="images\skeleton_up01.tga" />
+    <None Include="images\skeleton_up02.tga" />
+    <None Include="images\skeleton_up03.tga" />
+    <None Include="images\skeleton_up04.tga" />
+    <None Include="images\skeleton_up_red01.tga" />
+    <None Include="images\skeleton_up_red02.tga" />
+    <None Include="images\skeleton_up_red03.tga" />
+    <None Include="images\skeleton_up_red04.tga" />
+    <None Include="sounds\gem_collected.wav" />
+    <None Include="sounds\level_up.wav" />
+    <None Include="sounds\ouch.wav" />
+    <None Include="sounds\score_sound.wav" />
+    <None Include="sounds\shoot_sound.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

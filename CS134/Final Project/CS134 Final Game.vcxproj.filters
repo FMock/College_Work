@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DrawUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimFrameData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skeleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skeleton_red.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="score.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pumpkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundDef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skeleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skeleton_red.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyStates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pumpkin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\back01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\back02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\back03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\boulder.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\bullet.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\flowers.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front_shoot01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front_shoot02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front_shoot03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\front03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr05.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr10.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr11.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr12.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr13.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr14.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr15.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr16.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr17.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gr18.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_00.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_05.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_06.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_07.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hit_08.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left_shoot01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left_shoot02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left_shoot03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\left03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\player_hit.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\player_hit_back.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\player_hit_front.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\player_hit_left.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right_shoot01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right_shoot02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right_shoot03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\right03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rocks.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down_red01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down_red02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down_red03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down_red04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_down04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt05.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_hurt06.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left_red01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left_red02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left_red03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_left03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right_red01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right_red02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right_red03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_right03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still05.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still06.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still07.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_stand_still08.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up_red01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up_red02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up_red03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up_red04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\skeleton_up04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\game_paused.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds\shoot_sound.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num0.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\score.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num1.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num2.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num3.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num4.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num5.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num6.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num7.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num8.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\num9.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\lives.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds\score_sound.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds\ouch.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gems.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin04.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin05.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin06.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin07.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\pumpkin08.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gem01.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gem02.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gem03.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds\gem_collected.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sounds\level_up.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\level.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\game_over.tga">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
