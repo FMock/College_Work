@@ -1,0 +1,945 @@
+Run 1 
+
+[Process A
+	Priority: 1
+	Arrival Number: 88.28443
+	Expected Run Time: 3.214475
+	Start Time: 0.0
+	End Time: 0.0
+, Process B
+	Priority: 4
+	Arrival Number: 95.80799
+	Expected Run Time: 2.230764
+	Start Time: 0.0
+	End Time: 0.0
+, Process C
+	Priority: 2
+	Arrival Number: 98.15286
+	Expected Run Time: 9.235281
+	Start Time: 0.0
+	End Time: 0.0
+, Process D
+	Priority: 3
+	Arrival Number: 6.7205667
+	Expected Run Time: 2.241615
+	Start Time: 0.0
+	End Time: 0.0
+, Process E
+	Priority: 3
+	Arrival Number: 44.458782
+	Expected Run Time: 8.542155
+	Start Time: 0.0
+	End Time: 0.0
+, Process F
+	Priority: 3
+	Arrival Number: 18.448275
+	Expected Run Time: 0.6915499
+	Start Time: 0.0
+	End Time: 0.0
+, Process G
+	Priority: 4
+	Arrival Number: 55.439163
+	Expected Run Time: 6.851643
+	Start Time: 0.0
+	End Time: 0.0
+, Process H
+	Priority: 4
+	Arrival Number: 63.777184
+	Expected Run Time: 1.7740006
+	Start Time: 0.0
+	End Time: 0.0
+, Process I
+	Priority: 2
+	Arrival Number: 77.70379
+	Expected Run Time: 5.103495
+	Start Time: 0.0
+	End Time: 0.0
+, Process J
+	Priority: 4
+	Arrival Number: 3.6176682
+	Expected Run Time: 0.67957115
+	Start Time: 0.0
+	End Time: 0.0
+, Process K
+	Priority: 3
+	Arrival Number: 87.72866
+	Expected Run Time: 4.826451
+	Start Time: 0.0
+	End Time: 0.0
+, Process L
+	Priority: 2
+	Arrival Number: 7.374543
+	Expected Run Time: 7.469065
+	Start Time: 0.0
+	End Time: 0.0
+, Process M
+	Priority: 4
+	Arrival Number: 3.1427562
+	Expected Run Time: 8.865861
+	Start Time: 0.0
+	End Time: 0.0
+, Process N
+	Priority: 4
+	Arrival Number: 77.08563
+	Expected Run Time: 9.460384
+	Start Time: 0.0
+	End Time: 0.0
+, Process O
+	Priority: 4
+	Arrival Number: 0.7814169
+	Expected Run Time: 3.340453
+	Start Time: 0.0
+	End Time: 0.0
+, Process P
+	Priority: 2
+	Arrival Number: 62.299774
+	Expected Run Time: 3.9356816
+	Start Time: 0.0
+	End Time: 0.0
+, Process Q
+	Priority: 3
+	Arrival Number: 11.169422
+	Expected Run Time: 6.6244264
+	Start Time: 0.0
+	End Time: 0.0
+, Process R
+	Priority: 1
+	Arrival Number: 7.313025
+	Expected Run Time: 9.468525
+	Start Time: 0.0
+	End Time: 0.0
+, Process S
+	Priority: 1
+	Arrival Number: 84.17594
+	Expected Run Time: 1.0062022
+	Start Time: 0.0
+	End Time: 0.0
+, Process T
+	Priority: 1
+	Arrival Number: 67.614456
+	Expected Run Time: 8.895869
+	Start Time: 0.0
+	End Time: 0.0
+]
+
+First Come First Served:
+Time Chart:
+[O, O, O, O, OM, M, M, M, M, M, M, MJ, JD, D, DR, R, R, R, R, R, R, R, R, R, RL, L, L, L, L, L, L, LQ, Q, Q, Q, Q, Q, Q, QF, F, , , , E, E, E, E, E, E, E, E, E, E, , G, G, G, G, G, G, G, GP, P, P, P, PH, H, HT, T, T, T, T, T, T, T, TN, N, N, N, N, N, N, N, N, N, NI, I, I, I, I, IS, SK, K, K, K, K, KA, A, A, AB, B, BC, C, C, C, C, C, C, C, C, C, C]
+Turnaround Avg: 241508.8
+Waiting Avg: 81021.26
+Response Avg:5.222874
+Throughput: 0.19
+
+
+Shortest Job First:
+Time Chart:
+[O, O, O, O, J, M, M, M, M, M, M, M, M, M, D, D, D, Q, Q, Q, Q, Q, Q, Q, F, L, L, L, L, L, L, L, L, R, R, R, R, R, R, R, R, R, R, R, E, E, E, E, E, E, E, E, E, E, E, G, G, G, G, G, G, G, P, P, P, P, H, H, T, T, T, T, T, T, T, T, T, N, N, N, N, N, N, N, N, N, N, S, S, A, A, A, A, K, K, K, K, K, B, B, B, I, I, I, I, I, I, C, C, C, C, C, C, C, C, C, C]
+Turnaround Avg: 5.85
+Waiting Avg: 6.1766005
+Response Avg:12.026602
+Throughput: 0.16980608
+
+
+Shortest Remaining Time:
+Time Chart:
+[O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, J, J, J, J, J, J, J, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, F, F, F, F, F, F, F, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, P, P, P, P, P, P, P, P, P, P, P, P, P, P, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, N, N, N, N, N, N, N, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, N, N, N, N, N, N, N, N, N, N, N, N, S, S, S, S, S, S, S, S, S, S, S, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, K, K, K, K, K, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N]
+Turnaround Avg: 7.569928
+Waiting Avg: 1.8148429
+Response Avg:9.384771
+Throughput: 0.18
+
+
+Round Robin:
+Time Chart:
+[ABCDEFGHIJ]
+Turnaround Avg: 4.3687285E10
+Waiting Avg: 323.0
+Response Avg:4.3687248E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[O, O, O, OM, M, D, R, R, R, R, R, R, R, R, R, RL, L, L, L, L, L, L, LD, DQ, Q, Q, Q, Q, Q, QF, FE, E, E, E, E, E, E, E, EM, M, M, M, M, M, MJ, JG, G, P, P, P, PG, T, T, T, T, T, T, T, T, TI, I, I, I, I, IG, S, SK, A, A, A, AK, K, K, C, C, C, C, C, C, C, C, C, CCCC, CCCCCCCCK, KG, G, CG, CGH, CH, HN]
+Turnaround Avg: 9.605665
+Waiting Avg: 6.0880756
+Response Avg:9.708083
+Throughput: 0.31
+
+
+Run 2 
+
+[Process A
+	Priority: 2
+	Arrival Number: 54.58922
+	Expected Run Time: 7.657678
+	Start Time: 0.0
+	End Time: 0.0
+, Process B
+	Priority: 1
+	Arrival Number: 46.039833
+	Expected Run Time: 5.4265494
+	Start Time: 0.0
+	End Time: 0.0
+, Process C
+	Priority: 1
+	Arrival Number: 91.78945
+	Expected Run Time: 8.541344
+	Start Time: 0.0
+	End Time: 0.0
+, Process D
+	Priority: 4
+	Arrival Number: 2.5865018
+	Expected Run Time: 6.3525195
+	Start Time: 0.0
+	End Time: 0.0
+, Process E
+	Priority: 3
+	Arrival Number: 7.028323
+	Expected Run Time: 3.4426804
+	Start Time: 0.0
+	End Time: 0.0
+, Process F
+	Priority: 3
+	Arrival Number: 92.22986
+	Expected Run Time: 8.691839
+	Start Time: 0.0
+	End Time: 0.0
+, Process G
+	Priority: 2
+	Arrival Number: 37.897778
+	Expected Run Time: 1.8746556
+	Start Time: 0.0
+	End Time: 0.0
+, Process H
+	Priority: 2
+	Arrival Number: 58.299244
+	Expected Run Time: 5.6470838
+	Start Time: 0.0
+	End Time: 0.0
+, Process I
+	Priority: 3
+	Arrival Number: 56.221687
+	Expected Run Time: 2.6564603
+	Start Time: 0.0
+	End Time: 0.0
+, Process J
+	Priority: 2
+	Arrival Number: 80.518364
+	Expected Run Time: 1.907186
+	Start Time: 0.0
+	End Time: 0.0
+, Process K
+	Priority: 3
+	Arrival Number: 29.545832
+	Expected Run Time: 4.1996174
+	Start Time: 0.0
+	End Time: 0.0
+, Process L
+	Priority: 1
+	Arrival Number: 12.243212
+	Expected Run Time: 2.731691
+	Start Time: 0.0
+	End Time: 0.0
+, Process M
+	Priority: 2
+	Arrival Number: 35.31315
+	Expected Run Time: 3.1105769
+	Start Time: 0.0
+	End Time: 0.0
+, Process N
+	Priority: 1
+	Arrival Number: 48.131104
+	Expected Run Time: 3.6241949
+	Start Time: 0.0
+	End Time: 0.0
+, Process O
+	Priority: 2
+	Arrival Number: 46.071697
+	Expected Run Time: 0.8570261
+	Start Time: 0.0
+	End Time: 0.0
+, Process P
+	Priority: 3
+	Arrival Number: 36.428528
+	Expected Run Time: 1.5760143
+	Start Time: 0.0
+	End Time: 0.0
+, Process Q
+	Priority: 3
+	Arrival Number: 40.300262
+	Expected Run Time: 8.55945
+	Start Time: 0.0
+	End Time: 0.0
+, Process R
+	Priority: 2
+	Arrival Number: 75.96138
+	Expected Run Time: 8.552653
+	Start Time: 0.0
+	End Time: 0.0
+, Process S
+	Priority: 4
+	Arrival Number: 62.368893
+	Expected Run Time: 3.229692
+	Start Time: 0.0
+	End Time: 0.0
+, Process T
+	Priority: 3
+	Arrival Number: 37.551533
+	Expected Run Time: 4.9698586
+	Start Time: 0.0
+	End Time: 0.0
+]
+
+First Come First Served:
+Time Chart:
+[, D, D, D, D, D, D, DE, E, E, E, EL, L, L, L, , , , , , , , , , , , , , K, K, K, K, K, M, M, M, M, MP, PT, T, T, T, T, TG, G, GQ, Q, Q, Q, Q, Q, Q, Q, Q, QB, B, B, B, B, BO, ON, N, N, N, NA, A, A, A, A, A, A, AI, I, I, IH, H, H, H, H, H, HS, S, S, SR, R, R, R, R, R, R, R, R, RJ, JC, C, C, C, C, C, C, C, C, CF, F, F, F, F, F, F, F, F, F]
+Turnaround Avg: 253419.0
+Waiting Avg: 45732.145
+Response Avg:4.680438
+Throughput: 0.2
+
+
+Shortest Job First:
+Time Chart:
+[, , D, D, D, D, D, D, D, E, E, E, E, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, K, K, K, K, K, K, M, M, M, M, P, P, G, G, T, T, T, T, T, O, N, N, N, N, B, B, B, B, B, B, I, I, I, S, S, S, S, H, H, H, H, H, H, A, A, A, A, A, A, A, A, J, J, R, R, R, R, R, R, R, R, R, Q, Q, Q, Q, Q, Q, Q, Q, Q, C, C, C, C, C, C, C, C, C, F, F, F, F, F, F, F, F, F]
+Turnaround Avg: 5.8
+Waiting Avg: 7.1307096
+Response Avg:12.93071
+Throughput: 0.16865326
+
+
+Shortest Remaining Time:
+Time Chart:
+[D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, M, M, M, M, M, M, M, M, M, M, M, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, O, O, O, O, O, O, O, O, O, T, T, T, T, T, T, T, T, T, T, B, B, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F]
+Turnaround Avg: 5.0599356
+Waiting Avg: 4.7489133
+Response Avg:9.808848
+Throughput: 0.18
+
+
+Round Robin:
+Time Chart:
+[ABCDEFGHIJ]
+Turnaround Avg: 4.2231042E10
+Waiting Avg: 311.0
+Response Avg:4.2231008E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[D, D, D, E, E, E, L, L, LE, ED, D, D, D, K, K, K, M, M, M, MK, KP, G, GP, PT, T, B, B, B, B, B, BN, N, N, NO, OA, A, A, A, A, A, A, AH, H, H, H, H, HR, R, R, R, R, R, R, R, R, RJ, JT, T, TQ, Q, Q, C, C, C, C, C, C, C, C, C, CQ, Q, Q, Q, Q, QI]
+Turnaround Avg: 12.302189
+Waiting Avg: 5.499219
+Response Avg:12.006261
+Throughput: 0.17
+
+
+Run 3 
+
+[Process A
+	Priority: 2
+	Arrival Number: 72.01817
+	Expected Run Time: 7.6056976
+	Start Time: 0.0
+	End Time: 0.0
+, Process B
+	Priority: 2
+	Arrival Number: 84.58041
+	Expected Run Time: 3.0560946
+	Start Time: 0.0
+	End Time: 0.0
+, Process C
+	Priority: 4
+	Arrival Number: 12.853026
+	Expected Run Time: 5.665159
+	Start Time: 0.0
+	End Time: 0.0
+, Process D
+	Priority: 1
+	Arrival Number: 14.223236
+	Expected Run Time: 1.5193315
+	Start Time: 0.0
+	End Time: 0.0
+, Process E
+	Priority: 2
+	Arrival Number: 7.2237434
+	Expected Run Time: 0.63808215
+	Start Time: 0.0
+	End Time: 0.0
+, Process F
+	Priority: 3
+	Arrival Number: 93.97913
+	Expected Run Time: 0.33158013
+	Start Time: 0.0
+	End Time: 0.0
+, Process G
+	Priority: 3
+	Arrival Number: 4.4590054
+	Expected Run Time: 9.097461
+	Start Time: 0.0
+	End Time: 0.0
+, Process H
+	Priority: 3
+	Arrival Number: 87.177765
+	Expected Run Time: 0.5506606
+	Start Time: 0.0
+	End Time: 0.0
+, Process I
+	Priority: 2
+	Arrival Number: 38.91133
+	Expected Run Time: 0.9005858
+	Start Time: 0.0
+	End Time: 0.0
+, Process J
+	Priority: 3
+	Arrival Number: 6.11524
+	Expected Run Time: 0.11957178
+	Start Time: 0.0
+	End Time: 0.0
+, Process K
+	Priority: 1
+	Arrival Number: 53.47299
+	Expected Run Time: 8.488029
+	Start Time: 0.0
+	End Time: 0.0
+, Process L
+	Priority: 2
+	Arrival Number: 15.426493
+	Expected Run Time: 0.893981
+	Start Time: 0.0
+	End Time: 0.0
+, Process M
+	Priority: 1
+	Arrival Number: 13.394576
+	Expected Run Time: 8.41615
+	Start Time: 0.0
+	End Time: 0.0
+, Process N
+	Priority: 2
+	Arrival Number: 62.157146
+	Expected Run Time: 0.91288936
+	Start Time: 0.0
+	End Time: 0.0
+, Process O
+	Priority: 2
+	Arrival Number: 11.508799
+	Expected Run Time: 3.6159701
+	Start Time: 0.0
+	End Time: 0.0
+, Process P
+	Priority: 1
+	Arrival Number: 1.5585363
+	Expected Run Time: 1.8988658
+	Start Time: 0.0
+	End Time: 0.0
+, Process Q
+	Priority: 1
+	Arrival Number: 36.23777
+	Expected Run Time: 8.627709
+	Start Time: 0.0
+	End Time: 0.0
+, Process R
+	Priority: 2
+	Arrival Number: 53.09746
+	Expected Run Time: 5.036855
+	Start Time: 0.0
+	End Time: 0.0
+, Process S
+	Priority: 3
+	Arrival Number: 10.778361
+	Expected Run Time: 9.469424
+	Start Time: 0.0
+	End Time: 0.0
+, Process T
+	Priority: 2
+	Arrival Number: 92.7332
+	Expected Run Time: 5.7466006
+	Start Time: 0.0
+	End Time: 0.0
+]
+
+First Come First Served:
+Time Chart:
+[P, P, P, G, G, G, G, G, G, G, G, G, GJE, ES, S, S, S, S, S, S, S, S, SO, O, O, O, OC, C, C, C, C, C, CM, M, M, M, M, M, M, M, MD, D, DLQ, Q, Q, Q, Q, Q, Q, Q, Q, QI, IR, R, R, R, R, RK, K, K, K, K, K, K, K, KN, N, , , , A, A, A, A, A, A, A, A, A, , , , B, B, B, B, BH, H, , , , T, T, T, T, T, T, TF, , ]
+Turnaround Avg: 194917.95
+Waiting Avg: 76389.64
+Response Avg:4.1295347
+Throughput: 0.2
+
+
+Shortest Job First:
+Time Chart:
+[, P, P, P, G, G, G, G, G, G, G, G, G, G, J, E, L, D, D, O, O, O, O, C, C, C, C, C, C, M, M, M, M, M, M, M, M, M, Q, Q, Q, Q, Q, Q, Q, Q, Q, I, S, S, S, S, S, S, S, S, S, S, R, R, R, R, R, R, N, K, K, K, K, K, K, K, K, K, A, A, A, A, A, A, A, A, A, A, A, B, B, B, B, H, H, H, H, T, T, T, T, T, T, F]
+Turnaround Avg: 4.95
+Waiting Avg: 6.8632154
+Response Avg:11.813215
+Throughput: 0.19888914
+
+
+Shortest Remaining Time:
+Time Chart:
+[P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, J, J, G, G, G, G, G, G, G, G, G, E, E, E, E, E, E, E, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, L, L, L, L, L, L, L, L, L, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, I, I, I, I, I, I, I, I, I, I, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, N, N, N, N, N, N, N, N, N, N, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, T, T, T, T, T, T, T, T, T, T, T, T, F, F, F, F, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T]
+Turnaround Avg: 4.6149554
+Waiting Avg: 3.224453
+Response Avg:7.839409
+Throughput: 0.2
+
+
+Round Robin:
+Time Chart:
+[ABCDEFGHIJ]
+Turnaround Avg: 2.91248558E10
+Waiting Avg: 159.0
+Response Avg:2.912484E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[P, P, G, G, G, G, EG, G, G, G, G, O, O, O, M, M, M, M, M, M, M, M, MD, DO, OL, LGJ, Q, Q, Q, Q, Q, Q, Q, Q, QI, IR, R, R, R, R, K, K, K, K, K, K, K, K, KRN, NJS, S, S, A, A, A, A, A, A, A, AB, B, B, BS, S, S, T, T, T, T, T, T, TS, S, S, SH, HFF, FFFFFFFFFC]
+Turnaround Avg: 13.027986
+Waiting Avg: 7.4277673
+Response Avg:13.138351
+Throughput: 0.28
+
+
+Run 4 
+
+[Process A
+	Priority: 1
+	Arrival Number: 31.737064
+	Expected Run Time: 0.15058646
+	Start Time: 0.0
+	End Time: 0.0
+, Process B
+	Priority: 2
+	Arrival Number: 37.85894
+	Expected Run Time: 8.02016
+	Start Time: 0.0
+	End Time: 0.0
+, Process C
+	Priority: 1
+	Arrival Number: 9.483135
+	Expected Run Time: 9.421481
+	Start Time: 0.0
+	End Time: 0.0
+, Process D
+	Priority: 3
+	Arrival Number: 4.616803
+	Expected Run Time: 6.1338115
+	Start Time: 0.0
+	End Time: 0.0
+, Process E
+	Priority: 4
+	Arrival Number: 10.035008
+	Expected Run Time: 6.7602105
+	Start Time: 0.0
+	End Time: 0.0
+, Process F
+	Priority: 3
+	Arrival Number: 14.449805
+	Expected Run Time: 9.360074
+	Start Time: 0.0
+	End Time: 0.0
+, Process G
+	Priority: 1
+	Arrival Number: 90.71194
+	Expected Run Time: 9.82172
+	Start Time: 0.0
+	End Time: 0.0
+, Process H
+	Priority: 4
+	Arrival Number: 57.694275
+	Expected Run Time: 9.956708
+	Start Time: 0.0
+	End Time: 0.0
+, Process I
+	Priority: 3
+	Arrival Number: 35.743637
+	Expected Run Time: 6.763224
+	Start Time: 0.0
+	End Time: 0.0
+, Process J
+	Priority: 2
+	Arrival Number: 71.536
+	Expected Run Time: 9.7852745
+	Start Time: 0.0
+	End Time: 0.0
+, Process K
+	Priority: 2
+	Arrival Number: 17.85735
+	Expected Run Time: 2.912846
+	Start Time: 0.0
+	End Time: 0.0
+, Process L
+	Priority: 1
+	Arrival Number: 31.079065
+	Expected Run Time: 9.015598
+	Start Time: 0.0
+	End Time: 0.0
+, Process M
+	Priority: 2
+	Arrival Number: 53.057854
+	Expected Run Time: 7.9906106
+	Start Time: 0.0
+	End Time: 0.0
+, Process N
+	Priority: 1
+	Arrival Number: 91.44982
+	Expected Run Time: 2.0806718
+	Start Time: 0.0
+	End Time: 0.0
+, Process O
+	Priority: 1
+	Arrival Number: 24.718672
+	Expected Run Time: 2.1466584
+	Start Time: 0.0
+	End Time: 0.0
+, Process P
+	Priority: 4
+	Arrival Number: 12.079477
+	Expected Run Time: 6.0817533
+	Start Time: 0.0
+	End Time: 0.0
+, Process Q
+	Priority: 2
+	Arrival Number: 75.64628
+	Expected Run Time: 7.8306317
+	Start Time: 0.0
+	End Time: 0.0
+, Process R
+	Priority: 2
+	Arrival Number: 95.8756
+	Expected Run Time: 4.3780036
+	Start Time: 0.0
+	End Time: 0.0
+, Process S
+	Priority: 3
+	Arrival Number: 18.778664
+	Expected Run Time: 3.6156554
+	Start Time: 0.0
+	End Time: 0.0
+, Process T
+	Priority: 4
+	Arrival Number: 30.407244
+	Expected Run Time: 2.2248566
+	Start Time: 0.0
+	End Time: 0.0
+]
+
+First Come First Served:
+Time Chart:
+[, , , D, D, D, D, D, D, DC, C, C, C, C, C, C, C, C, C, CE, E, E, E, E, E, EP, P, P, P, P, P, P, PF, F, F, F, F, F, F, F, F, FK, K, K, KS, S, S, SO, O, O, OT, T, TL, L, L, L, L, L, L, L, L, LAI, I, I, I, I, I, I, IB, B, B, B, B, B, B, B, BM, M, M, M, M, M, M, M, MH, H, H, H, H, H, H, H, H, H, HJ, J, J, J, J, J, J, J, J, JQ, Q, Q, Q, Q, Q, Q, Q, QG, G, G, G, G, G, G, G, G, G, GN, N, NR, R, R, R, R, R]
+Turnaround Avg: 369044.22
+Waiting Avg: 109605.164
+Response Avg:6.2225275
+Throughput: 0.15
+
+
+Shortest Job First:
+Time Chart:
+[, , , , D, D, D, D, D, D, D, E, E, E, E, E, E, E, K, K, K, S, S, S, S, O, O, O, P, P, P, P, P, P, P, A, T, T, T, I, I, I, I, I, I, I, B, B, B, B, B, B, B, B, B, M, M, M, M, M, M, M, M, L, L, L, L, L, L, L, L, L, L, F, F, F, F, F, F, F, F, F, F, Q, Q, Q, Q, Q, Q, Q, Q, C, C, C, C, C, C, C, C, C, C, N, N, N, R, R, R, R, R, J, J, J, J, J, J, J, J, J, J, G, G, G, G, G, G, G, G, G, G, H, H, H, H, H, H, H, H, H, H]
+Turnaround Avg: 6.75
+Waiting Avg: 19.375973
+Response Avg:26.125973
+Throughput: 0.14324923
+
+
+Shortest Remaining Time:
+Time Chart:
+[D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, E, P, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, P, P, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, T, T, T, T, T, T, T, T, T, T, T, T, T, A, A, T, T, T, T, T, T, T, T, T, T, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, L, L, L, L, L, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, L, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H]
+Turnaround Avg: 7.199927
+Waiting Avg: 13.668826
+Response Avg:20.86875
+Throughput: 0.16
+
+
+Round Robin:
+Time Chart:
+[ABCDEFGHIJ]
+Turnaround Avg: 3.4949829E10
+Waiting Avg: 161.0
+Response Avg:3.4949808E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[D, D, D, C, C, C, C, C, C, C, C, C, CD, K, K, KD, O, O, OD, DF, F, L, L, L, L, L, L, L, L, L, LAB, B, B, B, B, B, B, B, BM, M, M, M, M, M, M, MF, F, F, F, F, J, J, J, J, J, J, J, J, J, G, G, G, G, G, G, G, G, G, GN, N, NJQ, Q]
+Turnaround Avg: 10.56252
+Waiting Avg: 2.4926677
+Response Avg:10.1553
+Throughput: 0.11
+
+
+Run 5 
+
+[Process A
+	Priority: 1
+	Arrival Number: 71.50004
+	Expected Run Time: 0.16914913
+	Start Time: 0.0
+	End Time: 0.0
+, Process B
+	Priority: 3
+	Arrival Number: 53.70496
+	Expected Run Time: 1.1003329
+	Start Time: 0.0
+	End Time: 0.0
+, Process C
+	Priority: 2
+	Arrival Number: 14.723909
+	Expected Run Time: 2.374248
+	Start Time: 0.0
+	End Time: 0.0
+, Process D
+	Priority: 4
+	Arrival Number: 33.74017
+	Expected Run Time: 3.4154086
+	Start Time: 0.0
+	End Time: 0.0
+, Process E
+	Priority: 3
+	Arrival Number: 9.897489
+	Expected Run Time: 0.4301513
+	Start Time: 0.0
+	End Time: 0.0
+, Process F
+	Priority: 1
+	Arrival Number: 48.999577
+	Expected Run Time: 2.913965
+	Start Time: 0.0
+	End Time: 0.0
+, Process G
+	Priority: 2
+	Arrival Number: 10.385979
+	Expected Run Time: 6.4014006
+	Start Time: 0.0
+	End Time: 0.0
+, Process H
+	Priority: 2
+	Arrival Number: 99.90962
+	Expected Run Time: 5.611021
+	Start Time: 0.0
+	End Time: 0.0
+, Process I
+	Priority: 2
+	Arrival Number: 64.06668
+	Expected Run Time: 7.803585
+	Start Time: 0.0
+	End Time: 0.0
+, Process J
+	Priority: 4
+	Arrival Number: 28.307629
+	Expected Run Time: 3.5742908
+	Start Time: 0.0
+	End Time: 0.0
+, Process K
+	Priority: 3
+	Arrival Number: 46.226383
+	Expected Run Time: 4.6034217
+	Start Time: 0.0
+	End Time: 0.0
+, Process L
+	Priority: 1
+	Arrival Number: 2.6664853
+	Expected Run Time: 0.901276
+	Start Time: 0.0
+	End Time: 0.0
+, Process M
+	Priority: 1
+	Arrival Number: 69.15966
+	Expected Run Time: 5.9377933
+	Start Time: 0.0
+	End Time: 0.0
+, Process N
+	Priority: 1
+	Arrival Number: 22.686314
+	Expected Run Time: 1.8998523
+	Start Time: 0.0
+	End Time: 0.0
+, Process O
+	Priority: 2
+	Arrival Number: 36.783264
+	Expected Run Time: 7.4072995
+	Start Time: 0.0
+	End Time: 0.0
+, Process P
+	Priority: 4
+	Arrival Number: 41.05289
+	Expected Run Time: 2.3191261
+	Start Time: 0.0
+	End Time: 0.0
+, Process Q
+	Priority: 3
+	Arrival Number: 77.968735
+	Expected Run Time: 6.6856685
+	Start Time: 0.0
+	End Time: 0.0
+, Process R
+	Priority: 3
+	Arrival Number: 74.486176
+	Expected Run Time: 8.313232
+	Start Time: 0.0
+	End Time: 0.0
+, Process S
+	Priority: 1
+	Arrival Number: 1.033783
+	Expected Run Time: 6.4405675
+	Start Time: 0.0
+	End Time: 0.0
+, Process T
+	Priority: 2
+	Arrival Number: 73.27014
+	Expected Run Time: 8.823595
+	Start Time: 0.0
+	End Time: 0.0
+]
+
+First Come First Served:
+Time Chart:
+[S, S, S, S, S, S, SL, L, E, EG, G, G, G, G, G, GC, C, C, C, , , N, N, N, , , J, J, J, J, J, D, D, D, D, D, DO, O, O, O, O, O, O, OP, P, PK, K, K, K, K, KF, F, F, FB, B, , , , , , , , I, I, I, I, I, I, I, I, IM, M, M, M, M, M, MAT, T, T, T, T, T, T, T, T, TR, R, R, R, R, R, R, R, R, RQ, Q, Q, Q, Q, Q, QH, H, H, H, H, H, H]
+Turnaround Avg: 213133.97
+Waiting Avg: 23314.781
+Response Avg:4.3562694
+Throughput: 0.2
+
+
+Shortest Job First:
+Time Chart:
+[, S, S, S, S, S, S, S, L, L, E, G, G, G, G, G, G, G, C, C, C, C, C, N, N, N, N, N, N, J, J, J, J, J, D, D, D, D, O, O, O, O, O, O, O, O, P, P, P, F, F, F, K, K, K, K, K, B, B, B, B, B, B, B, B, I, I, I, I, I, I, I, I, A, M, M, M, M, M, M, Q, Q, Q, Q, Q, Q, Q, R, R, R, R, R, R, R, R, R, T, T, T, T, T, T, T, T, T, H, H, H, H, H, H]
+Turnaround Avg: 5.5
+Waiting Avg: 3.8052888
+Response Avg:9.305289
+Throughput: 0.18012536
+
+
+Shortest Remaining Time:
+Time Chart:
+[S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, L, L, L, L, L, L, L, L, L, L, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, S, E, E, E, E, E, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, G, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, C, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, N, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, J, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, D, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, P, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, O, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, K, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, I, A, A, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, M, I, I, I, I, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, Q, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, R, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, T, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H, H]
+Turnaround Avg: 4.724948
+Waiting Avg: 2.2762496
+Response Avg:7.001197
+Throughput: 0.18
+
+
+Round Robin:
+Time Chart:
+[ABCDEFGHIJ]
+Turnaround Avg: 3.20373412E10
+Waiting Avg: 193.0
+Response Avg:3.2037324E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[S, S, S, S, S, S, SL, LE, E, G, G, G, G, G, G, GC, N, NC, CJ, J, J, JD, D, D, O, O, O, O, O, O, O, O, OK, K, K, K, F, F, FK, KB, BDP, P, P, I, I, I, M, M, M, M, M, MA, AI, I, I, I, IT, T, T, T, T, T, T]
+Turnaround Avg: 8.616062
+Waiting Avg: 2.8665352
+Response Avg:8.385321
+Throughput: 0.16
+
+
+Run Averages:
+
+
+First Come First Served:
+Time Chart:
+[]
+Turnaround Avg: 254404.8
+Waiting Avg: 67212.6
+Response Avg:4.922329
+Throughput: 0.188
+
+
+Shortest Job First:
+Time Chart:
+[]
+Turnaround Avg: 5.7699995
+Waiting Avg: 8.670358
+Response Avg:14.440358
+Throughput: 0.17214462
+
+
+Shortest Remaining Time:
+Time Chart:
+[]
+Turnaround Avg: 5.8339386
+Waiting Avg: 5.146657
+Response Avg:10.980596
+Throughput: 0.18
+
+
+Round Robin:
+Time Chart:
+[]
+Turnaround Avg: 3.6406071E10
+Waiting Avg: 229.4
+Response Avg:3.6406044E7
+Throughput: 10.0
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 0.0
+Waiting Avg: 0.0
+Response Avg:0.0
+Throughput: 0.0
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+[]
+Turnaround Avg: 10.822885
+Waiting Avg: 4.874853
+Response Avg:10.678663
+Throughput: 0.206
