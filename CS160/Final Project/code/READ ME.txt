@@ -1,0 +1,6 @@
+Entropy.py holds the main method.
+
+***Important***
+You must run this code with Administrator priveledges or when you try
+to capture packets an error will occur because the OS is blocking the
+program from capturing packets
