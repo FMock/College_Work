@@ -1,0 +1,59 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Nuweb}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Nuweb and HTML}{2}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Writing Nuweb}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}The Major Commands}{3}{subsection.1.2.1}
+\contentsline {subsubsection}{Scraps}{3}{section*.2}
+\contentsline {subsubsection}{Flags}{5}{section*.3}
+\contentsline {subsection}{\numberline {1.2.2}The Minor Commands}{5}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Sectioning commands}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Running Nuweb}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}Generating HTML}{8}{section.1.5}
+\contentsline {section}{\numberline {1.6}Restrictions}{8}{section.1.6}
+\contentsline {section}{\numberline {1.7}Acknowledgements}{9}{section.1.7}
+\contentsline {chapter}{\numberline {2}The Overall Structure}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Files}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}The Main Files}{12}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Support Files}{14}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}The Main Routine}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Command-Line Arguments}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}File Names}{21}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Pass One}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Accumulating Definitions}{27}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Block Comments}{29}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Fixing the Cross References}{34}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Dealing with fragment parameters}{34}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Writing the Latex File}{39}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Formatting Definitions}{43}{subsection.2.4.1}
+\contentsline {subsubsection}{Formatting Cross References}{48}{section*.4}
+\contentsline {subsubsection}{Formatting a Scrap}{51}{section*.5}
+\contentsline {subsection}{\numberline {2.4.2}Generating the Indices}{62}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Writing the LaTeX File with HTML Scraps}{69}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Formatting Definitions}{71}{subsection.2.5.1}
+\contentsline {subsubsection}{Formatting Cross References}{74}{section*.6}
+\contentsline {subsubsection}{Formatting a Scrap}{75}{section*.7}
+\contentsline {subsection}{\numberline {2.5.2}Generating the Indices}{78}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Writing the Output Files}{82}{section.2.6}
+\contentsline {chapter}{\numberline {3}The Support Routines}{86}{chapter.3}
+\contentsline {section}{\numberline {3.1}Source Files}{86}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Global Declarations}{86}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Local Declarations}{87}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Reading a File}{87}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Opening a File}{91}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Scraps}{92}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Collecting Page Numbers}{114}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Names}{116}{section.3.3}
+\contentsline {section}{\numberline {3.4}Searching for Index Entries}{134}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Retrieving scrap uses}{136}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Building the Automata}{139}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Searching the Scraps}{142}{subsection.3.4.3}
+\contentsline {subsubsection}{Rejecting Matches}{147}{section*.8}
+\contentsline {section}{\numberline {3.5}Labels}{148}{section.3.5}
+\contentsline {section}{\numberline {3.6}Memory Management}{151}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Allocating Memory}{151}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Freeing Memory}{153}{subsection.3.6.2}
+\contentsline {chapter}{\numberline {4}Man page}{154}{chapter.4}
+\contentsline {chapter}{\numberline {5}Indices}{158}{chapter.5}
+\contentsline {section}{\numberline {5.1}Files}{158}{section.5.1}
+\contentsline {section}{\numberline {5.2}Fragments}{158}{section.5.2}
+\contentsline {section}{\numberline {5.3}Identifiers}{162}{section.5.3}

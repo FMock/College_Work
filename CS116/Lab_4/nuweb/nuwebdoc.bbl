@@ -1,0 +1,56 @@
+\input bibnames.sty \hyphenation{Ker-n-i-ghan Port-able Post-Script Pren-tice
+  Richt-er Spring-er} \input bibnames.sty \input path.sty \hyphenation{Kath-ryn
+  Ker-n-i-ghan Krom-mes Lar-ra-bee Pat-rick Port-able Post-Script Pren-tice
+  Rich-ard Ro-bert Richt-er Sha-mos Spring-er The-o-dore Uz-ga-lis}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{drakos:94}
+Nikos Drakos, \emph{From text to hypertext: A post-hoc rationalisation of
+  latex2html}, Computer Networks and ISDN Systems \textbf{27} (1994), 215--224.
+
+\bibitem{Knuth:CJ-27-2-97}
+Donald~E. Knuth, \emph{Literate programming}, The Computer Journal \textbf{27}
+  (1984), no.~2, 97--111.
+
+\bibitem{Knuth:ct-a}
+\bysame, \emph{The {\TeX}book}, Computers and Typesetting,
+  vol.~{\noopsort{1986a}}A, Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, 1986.
+
+\bibitem{Knuth:ct-b}
+\bysame, \emph{{\TeX}: The program}, Computers and Typesetting, vol.~B,
+  Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, {\noopsort{1986b}}1986.
+
+\bibitem{Knuth:ct-d}
+\bysame, \emph{\mf{}: The program}, Computers and Typesetting, vol.~D,
+  Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, {\noopsort{1986d}}1986.
+
+\bibitem{Lamport:LDP85}
+Leslie Lamport, \emph{{\LaTeX}\emdash a document preparation system\emdash
+  user's guide and reference manual}, Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA,
+  USA, 1985.
+
+\bibitem{Levy:TB8-1-12}
+Silvio Levy, \emph{{{\WEB{} adapted to C, another approach}}}, {\TUB{}}
+  \textbf{8} (1987), no.~1, 12--13.
+
+\bibitem{Ramsey:LPT92}
+Norman Ramsey, \emph{Literate-programming tools need not be complex}, Report at
+  \path|ftp.cs.princeton.edu| in \path|/reports/1991/351.ps.Z|. Software at
+  \path|ftp.cs.princeton.edu| in \path|/pub/noweb.shar.Z| and at
+  \path|bellcore.com| in \path|/pub/norman/noweb.shar.Z|. CS-TR-351-91,
+  Department of Computer Science, Princeton University, August 1992, Submitted
+  to {\em IEEE Software}.
+
+\bibitem{Williams:FUM92}
+Ross Williams, \emph{Funnelweb user's manual}, \path|ftp.adelaide.edu.au| in
+  \path|/pub/compression| and \path|/pub/funnelweb|, University of Adelaide,
+  Adelaide, South Australia, Australia, 1992.
+
+\end{thebibliography}
