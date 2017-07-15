@@ -1,0 +1,123 @@
+CS102 Beginning Programing with C++
+QUIZ 3
+Frank Mock
+August 1st, 2010
+****This file contains my answers to all 3 quiz questions****
+****This is a read file do not try to compile*****
+****This folder contain a seperate file for each quiz question for compile****
+
+Question 1.
+//Program Description: Part 1 of Quiz 3. This program will open the file
+//data.txt for both input and output but first determines if the file exists.
+//If the file does not exist, the program will create it and open it for input
+//and output.
+
+#include<iostream>
+#include<fstream> //Must include this preprocessor directive to use fstream
+using namespace std;
+
+int main()
+{
+
+    const int SIZE = 200;
+    char input[SIZE];
+    
+    //Create input file stream object
+    ifstream inFile("data.txt", ios::in);
+    ofstream outFile("data.txt", ios::out|ios::app);
+    
+    //NOTE TO INSTRUCTOR
+    //fstream dataFile("data.txt", ios::in | ios::out);
+    //This line did not allow me to read and write so I
+    //used seperate file stream objects 
+
+    //Could not open data.txt
+    if(!inFile)
+    {
+        cout << "data.txt did not exist\n";
+        cout << "and had to be created\n";
+     
+        //Write to file
+        cout << "Writing to file\n";
+        outFile << "Test text on file\n";       
+    }
+    else
+    {
+
+        //File data.txt already exist
+        cout << "Writing to file\n";
+        outFile << "Test text on file\n";
+        //Reading text from file
+        cout << "READING TEXT FROM FILE\n";
+        cout <<"***********************\n";
+        inFile.getline(input, SIZE);
+        while(!inFile.eof())
+        {
+            cout << input << endl;
+            inFile.getline(input, SIZE); 
+        }
+
+    }
+
+    system("pause");
+    return 0;
+}
+
+Question 2.
+//Program Description: This program will calculate and display the size
+//of a file called data.txt which is in the same directory as the program file
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+    long begin, end;
+    
+    //Open file stream object  - pointer is at beginning of file
+    ifstream DataFile("data.txt");
+    //Assign to begin the value returned by member function tellg()
+    begin = DataFile.tellg();
+    //Move pointer to end of file    
+    DataFile.seekg(0, ios::end);
+    //Assign to end the value returned by member function tellg()
+    end = DataFile.tellg();
+    //Calculte and display the number of bytes
+    cout << "The file size is " << (end - begin) << " bytes.\n" << endl;
+    
+    system("pause");
+    return 0;
+}
+
+Question 3.
+//Program Description: This program will rewind the file stream object
+//named infoFile after the file has read to the end of the file
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+    const int SIZE = 200;
+    char data[SIZE];
+    
+    fstream infoFile("data.txt");
+    
+    infoFile.getline(data, SIZE);
+    while(!infoFile.eof())
+    {
+        cout << data << endl;
+        infoFile.getline(data, SIZE); 
+    }
+    
+    //Rewind to the begining of the file
+    infoFile.seekg(0, ios::beg);
+    
+    //Close file stream
+    infoFile.close();
+    
+    system("pause");
+    return 0;
+}
